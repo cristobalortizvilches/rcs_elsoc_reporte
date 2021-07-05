@@ -1,0 +1,1982 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Reporte_Completo.knit</title>
+    <meta charset="utf-8" />
+    <script src="libs/header-attrs-2.9/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="gentle-r.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+
+
+background-image: url("Imagenes/portada.png")
+background-position: center
+background-size: contain
+
+---
+class: middle
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+# Estudio Longitudinal
+# Social de Chile
+Resultados longitudinales 2016-2019
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+&lt;img src="Imagenes/logos.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+---
+
+class: middle
+&lt;p style='text-align: justify;'&gt;
+El Centro de Estudios de Conflicto y Cohesión Social (COES) desarrolla investigación colaborativa en temas relacionados al conflicto social y la cohesión (convivencia) en Chile, por medio de un equipo multidisciplinario proveniente de las ciencias sociales y humanidades. COES centra sus actividades académicas y de difusión en el análisis de las múltiples manifestaciones del conflicto y cohesión social en Chile, sus causas, así como también su contexto cultural e histórico.
+&lt;br&gt;
+&lt;br&gt;
+COES está patrocinado por la Universidad de Chile y la Pontificia Universidad Católica de Chile, y como instituciones asociadas se encuentran la Universidad Diego Portales y la Universidad Adolfo Ibáñez. COES cuenta con el apoyo del Fondo de Financiamiento de Centros de Investigación en Áreas Prioritarias (FONDAP, dependiente de la Agencia Nacional de Investigación y Desarrollo (ANID) del Ministerio de Ciencia, Tecnología, Conocimiento e Innovación. ELSOC además cuenta como socio al Instituto Milenio para la Investigación en Depresión y Personalidad (MIDAP).
+&lt;/p&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;img src="Imagenes/anid_midap.png" width="30%" style="display: block; margin: auto;" /&gt;
+
+---
+# Equipo Ejecutivo
+.pull-left[
+**Roberto González**
+
+Profesor Titular Escuela de Psicología PUC. Investigador Principal COES
+
+**Matías Bargsted**
+
+Profesor Asociado Instituto de Sociología PUC. Investigador Asociado COES
+
+**Héctor Carvacho**
+
+Profesor Asistente Escuela de Psicología PUC. Investigador Adjunto COES
+
+**Daniel Miranda**
+
+Investigador Centro Medición MIDE UC. Investigador Adjunto COES
+]
+
+.pull-right[
+
+**Edgardo Cerda**
+
+Coordinador Técnica ELSOC
+
+**Monserratt Mella**
+
+Coordinadora Técnica ELSOC
+
+**Alejandro Plaza**
+
+Coordinador Técnica ELSOC
+]
+
+---
+# Directorio Técnico
+.pull-left[
+**Dante Contreras**
+
+Profesor Titular Departamento de Economía UCH. 
+Investigador Principal COES
+
+**Juan Carlos Castillo**
+
+Profesor Asociado Departamento de Sociología UCH. 
+Investigador Principal COES
+]
+
+.pull-right[
+**Valentina Paredes**
+
+Profesora Asistente Departamento de Economía UCH. 
+Investigadora Asociada COES
+
+**Matías Garretón**
+
+Investigador Centro de Inteligencia Territorial UAI. 
+Investigador Asociado COES
+]
+---
+# Investigadores Colaboradores 
+
+.pull-left[
+**Dimensiones Socioeconómicas del Conflicto**
+
+Valentina Paredes &lt;br&gt;
+Francisco Pino
+&lt;br&gt;
+&lt;br&gt;
+**Interacciones Grupales e Individuales**
+
+Roberto González &lt;br&gt;
+Daniel Miranda &lt;br&gt;
+Mónica Gerber &lt;br&gt;
+Luis Maldonado &lt;br&gt;
+Ignacio Madero &lt;br&gt;
+Héctor Carvacho &lt;br&gt;
+Gloria Jiménez
+&lt;br&gt;
+&lt;br&gt;
+**Conflicto Político y Social**
+
+Matías Bargsted &lt;br&gt;
+Nicolás Somma &lt;br&gt;
+]
+.pull-right[
+**Geografías del Conflicto**
+
+María Luisa Méndez &lt;br&gt;
+Nincen Figueroa &lt;br&gt;
+&lt;br&gt;
+**Otros/as Académicos/as Colaboradores/as**
+
+Ignacia Abufhele &lt;br&gt;
+Tomás Campos &lt;br&gt;
+Carlos Delgado &lt;br&gt;
+Julio Iturra &lt;br&gt;
+Javiera Pizarro &lt;br&gt;
+Salvador Vargas &lt;br&gt;
+]
+---
+# Presentación del Estudio 
+
+&lt;p style='text-align: justify;'&gt;
+El Centro de Estudios de Conflicto y Cohesión Social (COES) tiene el agrado de publicar el informe “Radiografía del Cambio Social”, el cual consolida los principales hallazgos longitudinales de cuatro mediciones anuales del Estudio Longitudinal Social de Chile (ELSOC 2016-2019).
+&lt;br&gt;
+&lt;br&gt;
+ELSOC es una encuesta desarrollada para analizar longitudinalmente, en un estudio panel, la evolución del conflicto y cohesión social en la sociedad chilena, basándose en modelos conceptuales descritos en la literatura nacional e internacional de las disciplinas del ámbito de la Economía, Sociología, Psicología, Ciencia Política y Estudios Urbanos. De este modo, se orienta a examinar los principales antecedentes, factores moderadores y mediadores, así como las principales consecuencias asociadas al desarrollo de distintas formas de sociabilidad en Chile.
+&lt;br&gt;
+&lt;br&gt;
+A fines del año 2019 y principios del 2020, Chile experimentó el estallido social más grande de las últimas tres décadas. Tomando como antecedente los últimos tres años, el presente informe caracteriza los principales patrones de estabilidad y cambio de las creencias, actitudes y percepciones que tienen los chilenos. Las consecuencias del estallido social a nivel político y social hoy son inconmensurables, pero consideramos que estudios como ELSOC permitirán a los investigadores y al público general tener un mapa global de las principales transformaciones y sus cristalizaciones en el tiempo.
+&lt;/p&gt;
+---
+class: middle
+&lt;p style='text-align: justify;'&gt;
+
+Deseamos agradecer a cada uno de los investigadores e investigadoras de COES que han participado en el diseño e implementación de ELSOC. Un estudio de la complejidad de ELSOC no sería posible sin el compromiso de toda la comunidad de investigadores del Centro. Adicionalmente, agradecemos el apoyo y financiamiento de ANID y su programa FONDAP, sin los cuales no sería posible implementar una encuesta con los estándares que exige este tipo de estudios.
+&lt;br&gt;
+&lt;br&gt;
+Agradecemos también al aporte que ha hecho el Instituto Milenio para la Investigación en Depresión y Personalidad (MIDAP) al desarrollo del estudio. Agradecemos especialmente a todas las personas que han participado activamente en las cuatro mediciones ya realizadas en este estudio. Ellas nos han provisto de la información necesaria para poder analizar cómo y en qué aspectos ha ido evolucionando nuestra sociedad durante estos últimos cuatro años.
+&lt;br&gt;
+&lt;br&gt;
+Invitamos a todos los investigadores, estudiantes, tomadores de decisiones y a la opinión pública en general, a conocer principales resultados del estudio reportados en este informe. Esperamos que esta información nutra la reflexión académica y de la ciudadanía en torno a la manera como han evolucionado nuestras creencias, actitudes y percepciones que tenemos los chilenos y chilenas respecto de la convivencia y del conflicto en nuestra sociedad.
+&lt;/p&gt;
+
+&lt;p style='text-align: right;'&gt;      
+Roberto González
+&lt;br&gt;
+Investigador Principal COES
+&lt;br&gt;
+Coordinador Equipo ELSOC
+&lt;/p&gt;
+---
+# Indice
+.pull-left[
+**Reporte A**:
+- Caracterización general de ELSOC &lt;br&gt;
+&lt;br&gt;
+- Descripción de atrición &lt;br&gt;
+&lt;br&gt;
+- Composición de la muestra &lt;br&gt;
+&lt;br&gt;
+- Principales hallazgos longitudinales &lt;br&gt;
+&lt;br&gt;
+  1.- Movimientos sociales y acciones colectivas &lt;br&gt;
+  2.- Identificación política &lt;br&gt;
+  3.- Actitudes hacia la democracia &lt;br&gt;
+  4.- Perfiles ideológicos de los chilenos &lt;br&gt;
+  5.- Conflicto de clases y élites &lt;br&gt;
+  6.- Justificación de la violencia &lt;br&gt;
+  7.- Cambio Constitucional &lt;br&gt;
+]
+.pull-right[
+**Reporte B**:
+- Principales hallazgos longitudinales &lt;br&gt;
+&lt;br&gt;
+  8.-  Conflictividad barrial &lt;br&gt;
+  9.- Sociabilidad barrial &lt;br&gt;
+  10.- Confianza y seguridad con perspectiva territorial &lt;br&gt;
+  11.- Percepción de mérito y desigualdad &lt;br&gt;
+  12.- Género &lt;br&gt;
+  13.- Salud mental y bienestar&lt;br&gt;
+  14.- Migración
+]
+---
+class: center, middle
+background-image: url("Imagenes/fondo_modulo.jpg")
+background-position: center
+background-size: contain
+.pull-left[
+# Caracterización General de ELSOC
+]
+---
+# Objetivos General y Específicos
+&lt;p style='text-align: justify;'&gt;
+El Estudio Longitudinal Social de Chile (ELSOC) es una encuesta panel, representativa de la población nacional urbana, que analiza la estabilidad y cambio de las creencias, actitudes y percepciones que tenemos los chilenos y chilenas respecto de la convivencia y del conflicto en nuestra sociedad a lo largo del tiempo. 
+&lt;br&gt;
+&lt;br&gt;
+Una parte importante de los análisis reportan resultados analizando el efecto moderador que generan las variables demográficas y otras de interés (sexo, edad, quintiles de ingreso, orientación política, entre otras). Adicionalmente, se analizan descriptivamente las trayectorias de cambio que han seguido los participantes en muchos de los temas analizados en ELSOC (desde el 2016 y hasta el 2019). Dado que el reporte aborda varios temas, se ha decidido dividirlo en dos partes los cuales abordan los siguientes temas:
+&lt;br&gt; 
+&lt;/p&gt;
+**Reporte A**:
+- Cambios en los niveles de participación de los chilenos(as) en Movimientos Sociales y acciones colectivas.
+- Cambios en las orientaciones políticas, identificaciones partidarias y con las coaliciones políticas.
+- Cambios en las actitudes de apoyo al sistema político democrático.
+- Perfiles ideológicos de los chilenos y correlatos sociales.
+- Cambios en los niveles de conflictos y relaciones entre clases sociales, deprivación relativa y élites.
+- Cambios en la justificación de la violencia para el control y cambio social (protestas y rol de carabineros)
+- Variaciones en el tiempo en las actitudes hacia el cambio constitucional y factores asociados
+---
+class: middle
+**Reporte B**:
+- Cambios en la calidad de la convivencia en los barrios, la satisfacción de sus residentes y los conflictos presentes en éstos.
+- Cambios en los niveles de confianza y seguridad con perspectiva territorial
+- Cambios en la percepción de clase social subjetiva, mérito y desigualdad.
+- Género, sexismo hostil y benevolente, expectativas de roles de género e identidad de género
+- Cambios en los niveles de salud mental (sintomatología depresiva), género y trabajo.
+- Cambio en los niveles de amenaza realista, simbólica, y confianza hacia los inmigrantes peruanos y haitianos.
+- Efectos del contacto intergrupal en los niveles de amenaza realista, simbólica, y confianza hacia los inmigrantes peruanos, haitianos y venezolanos. Rol de normas y promoción de contacto intergrupal.
+
+---
+
+# Acceso a Base de Datos 
+&lt;p style='text-align: justify;'&gt;
+El Estudio Longitudinal Social de Chile (ELSOC) ya se encuentra en su quinta medición, y se ha consolidado como insumo para el desarrollo de investigación científica y aplicada en ciencias sociales. En el sitio web http://elsoc.cl se puede acceder a más información sobre el estudio. Los códigos utilizados para el desarrollo de las figuras y análisis de Radiografía del Cambio Social se encontrarán disponibles en https://github.com/centro-coes.
+&lt;br&gt;
+&lt;br&gt;
+En segundo lugar, ELSOC tiene un compromiso con los más altos estándares científicos en términos de producción y análisis de datos. Dentro de esta visión global, ELSOC se guía por las principales pautas de Transparencia y Apertura en la investigación científica. Con este propósito, las bases de datos y documentación correspondientes a las cuatro primeras mediciones de ELSOC se encontrarán disponibles, de manera libre y gratuita, en un repositorio de datos, al cual se podrá acceder en el link https://dataverse.harvard.edu/dataverse/elsoc.
+&lt;/p&gt;
+---
+
+# Ficha Técnica
+
+- Diseño: Estudio cuantitativo por medio de un cuestionario estructurado.
+
+- Periodicidad: Anual. 
+
+- Diseño Longitudinal: panel repetido (misma encuesta se aplica a dos muestras independientes). Segunda muestra se implementó a partir del tercer año de medición (2018).
+
+- Período de Aplicación: entre Julio y Noviembre de cada año. Cuarta medición se aplico entre el 21 de noviembre de 2019 y el 9 de marzo de 2020
+
+- Instrumento: Cuestionario compuesto por preguntas cerradas de carácter simple y múltiple junto a algunas preguntas abiertas. Combina módulos de preguntas permanentes (medidas en todas las olas) y otras intercaladas entre olas.
+
+- Cobertura Temática: Contiene siete módulos temáticos: Territorio, Redes y actitudes sociales, Ciudadanía y democracia, Desigualdad y legitimidad, Conflicto social, Salud y bienestar y Caracterización sociodemográfica.
+
+---
+# Dimension longitudinal del Diseño
+&lt;br&gt;
+&lt;img src="Imagenes/longitudinal.jpg" width="150%" height="150%" style="display: block; margin: auto;" /&gt;
+---
+
+# Ficha Técnica
+
+- Unidad de Análisis: Individuos.
+
+- Población Objetivo: Hombres y mujeres de 18 a 75 años, residentes habituales de viviendas particulares ocupadas en zonas urbanas, localizadas en 40 ciudades (92 comunas, 13 regiones) del país.
+
+- Marco Muestral: Marco de muestreo de manzanas del pre-censo 2011, trabajo elaborado por el Centro de Inteligencia Territorial (CIT) de la Universidad Adolfo Ibáñez.
+
+- Diseño Muestral: Probabilístico, estratificado (por tamaño de ciudades), por conglomerados y multietápico.
+
+- Unidades de Muestreo: Primero se eligen ciudades (UPM), luego manzanas (USM), y sub-bloques y viviendas (UTM). La unidad final de selección es la persona.
+
+---
+
+# Dimensión Territorial del Diseño Muestral
+
+
+|               Estrato                | Definición | N° de ciudades en marco muestral | N° de ciuades seleccionadas 	|
+| :--- |:--- | :---: | :---: |
+| Áreas metropolitana de Santiago    |            | 1   | 1  |
+| Áreas metropolitana de Valparaíso  |            | 1   | 1  |
+| Áreas metropolitana de Concepción  |            | 1   | 1  |
+| Ciudades grandes    | Más de 100.000 habitantes | 18  | 8  |
+| Ciudades medianas   | Más de 30.000 habitantes  | 28  | 10 |
+| Ciudades pequeñas   | Más de 10.000 habitantes  | 73  | 19 |
+|   Total             |                           | 122 | 40 |
+
+
+---
+# Etapas de Selección en el Diseño Muestral
+&lt;img src="Imagenes/etapas_seleccion.jpg" width="150%" height="150%" style="display: block; margin: auto;" /&gt;
+
+---
+# Ficha Técnica
+
+**Organismo Ejecutor**: Consultora Stephanie Eckman y Centro de Inteligencia Territorial (CIT) de la Universidad Adolfo Ibáñez (diseño muestral). Centro Micro Datos (CMD) de la Universidad de Chile (levantamiento, procesamiento de la información y construcción de factores de expansión).
+&lt;br&gt;
+
+**Entrenamiento y Ejecución**: Contratación de entrevistadores con experiencia en encuestas complejas y/o longitudinales. Capacitación centralizada y presencial para coordinadores de campo y un subconjunto de entrevistadores en Santiago (incluidos ejercicios prácticos para la implementación del cuestionario, uso de tabletas y protocolo de contacto). Actividades adicionales en otras regiones de Chile. Diseño de un Manual de entrevistador especializado para el proyecto.
+&lt;br&gt;
+
+**Operaciones de Control y Supervisión**: Entrega de incentivos monetarios para el encuestado ($ 6.000 CLP) y de material sobre el estudio (ELSOC y COES). Acciones de seguimiento basadas en la información de contacto (correo electrónico para cumpleaños y días festivos). Los coordinadores de campo supervisan el trabajo de los entrevistadores, verificando el número de visitas, el contacto, la identidad del participante y algunas preguntas claves. El Centro Micro Datos realiza una supervisión interna de al menos el 10% de la muestra (entrevistando nuevamente a algunos encuestados), verificando la duración y la respuesta de los participantes.
+
+---
+
+class: center, middle
+background-image: url("Imagenes/fondo_modulo.jpg")
+background-position: center
+background-size: contain
+.pull-left[
+# Descripción de atrición
+]
+---
+# Tamaño muestral
+&lt;p style='text-align: justify;'&gt;
+El diseño de ELSOC contempló entrevistar a 3.000 personas en su primera medición, reconociendo que año tras año, se reduciría el número de participantes, dado que algunos optarían voluntariamente por dejar de participar en el estudio y otras personas no podrían ser recontactadas o incluso algunas fallecerían. Este fenómeno es conocido como atrición, y pueden tener efectos nocivos sobre la utilidad de los datos longitudinales. Para cada año se planifica obtener un número de entrevistados (Muestra Objetivo) considerando una proyección de la atrición definida al momento de diseñar el estudio. ELSOC tiene buenos números en este aspecto. Incluso, en 2018 se logró recontactar a un número de participantes mayor al proyectado.
+&lt;/p&gt;
+&lt;br&gt;
+
+|        Medición       	| Muestra Objetivo 	| Muestra Lograda 	| Porcentaje de Logro 	|
+|:---------------------:	|:----------------:	|:---------------:	|:-------------------:	|
+| Muestra Original 2016 	|       3000       	|       2927      	|        97.6%        	|
+| Muestra Original 2017 	|       2536       	|       2473      	|        97.5%        	|
+| Muestra Original 2018 	|       2131       	|       2229      	|        104.6%       	|
+| Muestra Original 2019 	|       1790       	|       2153      	|        120.3%       	|
+| Muestra Refresco 2018 	|       1500       	|       1519      	|        101.3%       	|
+| Muestra Refresco 2019 	|       1275       	|       1264      	|        99.1%        	|
+
+---
+# Atrición de la Muestra Original y Muestra Refresco
+&lt;br&gt;
+
+|        Medición       | Muestra Lograda | Porcentaje Recuperado | Atrición |
+|:---------------------:|:---------------:|:---------------------:|:--------:|
+| Muestra Original 2016 |       2927      |           -           |          |
+| Muestra Original 2017 |       2473      |         84.5%         |   15.5%  |
+| Muestra Original 2018 |       2229      |         90.1%         |   9.9%   |
+| Muestra Original 2019 |       2153      |         96.6%         |   3.4%   |
+| Muestra Refresco 2018 |       1519      |           -           |          |
+| Muestra Refresco 2019 |       1264      |         83.2%         |   16.8%  |
+
+---
+# Atrición de la Muestra Original según Territorio
+&lt;img src="Imagenes/atricion_territorio.jpg" width="150%" height="150%" style="display: block; margin: auto;" /&gt;
+---
+
+# Atrición Muestral Original según sexo y edad*
+&lt;img src="Imagenes/atricion_sexo_edad.jpg" width="150%" height="150%" style="display: block; margin: auto;" /&gt;
+&lt;small&gt;*El paso de los años entre olas hace que los sujetos cambien de categoría etaria. El porcentaje recuperado asociado a edad debe considerarse como indicativo.&lt;/small&gt;
+---
+
+# Atrición de la Muestra refresco según Territorio
+&lt;img src="Imagenes/atricion_ref_territorio.jpg" width="150%" height="150%" style="display: block; margin: auto;" /&gt;
+
+---
+# Atrición de la Muestra Refresco según sexo y edad*
+&lt;img src="Imagenes/atricion_ref_sexo_edad.jpg" width="100%" height="100%" style="display: block; margin: auto;" /&gt;
+&lt;small&gt;*El paso de los años entre olas hace que los sujetos cambien de categoría etaria. El porcentaje recuperado asociado a edad debe considerarse como indicativo.&lt;/small&gt;
+---
+
+class: center, middle
+background-image: url("Imagenes/fondo_modulo.jpg")
+background-position: center
+background-size: contain
+.pull-left[
+# Composición de la Muestra
+]
+---
+
+# Composición de la Muestra
+&lt;p style='text-align: justify;'&gt;
+
+ELSOC ha ya completado cuatro mediciones anuales (2016, 2017, 2018 y 2019), lapso temporal dentro del cual es posible analizar la evolución de la sociedad chilena en todas las dimensiones medidas. Antes de proceder a la presentación de los principales hallazgos, este apartado caracteriza sociodemográficamente la muestra bajo estudio. 
+&lt;br&gt;
+&lt;br&gt;
+A continuación, describimos la muestra original de ELSOC en sus mediciones 2016 (N = 2.927), 2017 (N = 2.473), 2018 (N = 2.229) y 2019 (N = 2.153), según sexo, edad, educación, religión y zona de residencia. Todos los resultados presentados incorporan las principales características del diseño muestral complejo del estudio. Es decir, Se utiliza el ponderador muestral ajustado a población regional y sexo, estrato y conglomerado muestral.
+&lt;/p&gt;
+---
+
+### 0.1 Composición de Muestra según sexo y ola del estudio
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-9-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo) &lt;/small&gt;
+
+---
+### 0.2 Composición de Muestra según edad y ola del estudio
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-10-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo) &lt;/small&gt;
+---
+### 0.3 Composición de Muestra según educación y ola del estudio
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-11-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo) &lt;/small&gt;
+---
+### 0.4 Composición de Muestra según religión y ola del estudio
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-12-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo) &lt;/small&gt;
+---
+### 0.5 Composición de Muestra según zona de residencia y ola del estudio
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-13-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo) &lt;/small&gt;
+---
+# Foco en el cambio individual
+&lt;p style='text-align: justify;'&gt;
+Radiografía del Cambio Social tiene como objetivo fundamental caracterizar la estabilidad y el cambio en opiniones, actitudes y conductas de los participantes a lo largo del tiempo, enfocándose en distintas dimensiones de la cohesión y conflicto en Chile. 
+&lt;br&gt;
+&lt;br&gt;
+Para el logro de dicho objetivo, el presente reporte se centrará en un subconjunto de participantes del estudio: los 2096 entrevistados que participaron en las cuatro primeras olas de ELSOC (como parte de la muestra original). Dicha submuestra será la base empírica de los hallazgos expuestos en las siguientes secciones. 
+&lt;br&gt;
+&lt;br&gt;
+A continuación se describe a este grupo de participantes según los mismos atributos sociodemográficos (sexo, edad, educación, zona de residencia y religión), considerando la primera medición. Todos los resultados presentados incorporan el diseño muestral complejo de la encuesta.
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;small&gt; Nota 1: El promedio de edad de los participantes se ha incrementado entre estos años. También hay evidencia de un descenso en la identificación religiosa al comparar distintos años del estudio. Las otras variables no presentan variaciones relevantes a lo largo del tiempo.
+&lt;br&gt;
+Nota 2: Se utiliza el ponderador muestral ajustado a población regional y sexo, estrato y conglomerado muestral.
+&lt;/small&gt;
+&lt;/p&gt;
+---
+### 0.6 Distribución de Sub-Muestra de Participantes en las cuatro olas ELSOC según sexo
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-14-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo) &lt;/small&gt;
+---
+### 0.7 Distribución de Sub-Muestra de Participantes en las cuatro olas ELSOC según edad
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-15-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo) &lt;/small&gt;
+---
+### 0.8 Distribución de Sub-muestra de Participantes en las cuatro olas ELSOC según Nivel educacional
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-16-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo) &lt;/small&gt;
+
+---
+### 0.9 Distribución de Sub-Muestra de Participantes en las cuatro olas ELSOC según zona de residencia
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-17-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo) &lt;/small&gt;
+---
+
+class: center, middle
+background-image: url("Imagenes/fondo_modulo.jpg")
+background-position: center
+background-size: contain
+.pull-left[
+# Principales hallazgos longitudinales
+]
+---
+# Nota Explicativa
+&lt;p style='text-align: justify;'&gt;
+A continuación, se presentan los principales resultados de la encuesta ELSOC elaborados por investigadores del Centro de Conflicto y Cohesión Social (COES). Dada la diversidad de temas que son abordados en la encuesta, los investigadores colaboradores utilizaron diversos enfoques teóricos y herramientas empíricas en su análisis. Sin embargo, en Radiografía del Cambio Social se han definido una serie de criterios comunes para el desarrollo de resultados empíricos:
+&lt;br&gt;
+&lt;br&gt;
+&lt;/p&gt;
+- Foco en la evolución y cambio en las actitudes de la población, aún cuando en ocasiones se analizan preguntas incluidas en una o dos olas del estudio. &lt;br&gt;
+- Uso de pruebas estadísticas específicas para el análisis longitudinal. &lt;br&gt;
+- Utilización de submuestra de 2.096 participantes del estudio presentes en las cuatro mediciones (2016, 2017, 2018 y 2019). &lt;br&gt;
+- Tamaños muestrales reportados menores se explican exclusivamente por no respuesta a ítemes específicos. &lt;br&gt;
+- Utilización del diseño muestral complejo (ponderador muestral ajustado a población regional y sexo, estrato y conglomerado muestral) en el desarrollo de figuras descriptivas y pruebas inferenciales. &lt;br&gt;
+
+---
+# Levantamiento durante estallido social
+&lt;p style='text-align: justify;'&gt;
+El año 2019 correspondía levantar la cuarta ola de la Muestra 1 y la segunda ola de la Muestra 2 de ELSOC. El trabajo de terreno estaba programado para iniciarse el sábado 19 de Octubre de 2019, pero debido al estallido social ocurrido el 18 de Octubre, este debió ser suspendido hasta el jueves 21 de noviembre. El trabajo de terreno culminó el 9 de marzo del 2020.
+&lt;br&gt;
+&lt;br&gt;
+Ante la intensificación de la protesta social, comienza una coyuntura histórica inédita que pone de relieve importantes desafíos políticos y sociales para Chile, y su democracia. En este contexto, COES toma la decisión de incluir una serie de baterías y preguntas específicamente diseñadas para comprender mejor como la opinión pública chilena percibió y experimentó el estallido social, y de esta manera, poder contribuir a un entendimiento más profundo de nuestra sociedad tomando en consideración este periodo de nuestra historia reciente.
+&lt;/p&gt;
+---
+
+class: center, middle
+background-image: url("Imagenes/fondo_modulo.jpg")
+background-position: center
+background-size: contain
+.pull-left[
+# Movimientos Sociales y Acciones Colectivas
+¿Ha aumentado la participación social en movimientos sociales? ¿Con qué factores se relaciona el aumento en la participación?
+]
+
+---
+## Ciclo de movilización política y estallido social
+&lt;p style='text-align: justify;'&gt;
+El estallido social se desencadena después de un largo y progresivo ciclo de movilización política protagonizado recientemente por marchas estudiantiles, de pensiones y feministas. ELSOC consultó cada año por el movimiento social más valorado por el entrevistado, incluyendo en 2019 valoración del Movimiento Social de Octubre.
+&lt;br&gt;
+&lt;br&gt;
+La Figura 1.1 indica que entre el año 2018 y 2019 se produce una reducción importante en el porcentaje de personas que no valoran ningún movimiento social. El descenso de valoración experimentado por el movimiento estudiantil y laboral durante años anteriores también se revierte en el 2019.
+&lt;br&gt;
+&lt;br&gt;
+La Figura 1.2 refuerza este resultado al mostrar que la participación frecuente en movimientos sociales tiende a ser estable entre los años 2016 y 2018, para luego aumentar en 13 puntos porcentuales durante el año 2019, pasando desde un 21% en 2016 a un 36% en 2019.
+
+&lt;/p&gt;
+
+---
+### 1.1 ¿Cuál es el movimiento social que usted más valora de esta lista? Según ola del estudio
+![](Reporte_Completo_files/figure-html/unnamed-chunk-18-1.png)&lt;!-- --&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.883 &lt;/small&gt;
+---
+### 1.2 Frecuencia de participación en movimientos sociales, según Ola de encuesta
+&lt;p style='text-align: center;'&gt; Porcentaje que responde A veces, Frecuentemente o Muy frecuentemente &lt;/p&gt;
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-19-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N=1.445 &lt;/small&gt;
+---
+## Estallido social y aumento en la participación en movimientos sociales
+&lt;p style='text-align: justify;'&gt;
+El análisis del cambio individual en los niveles de participación en movimientos sociales sugiere cierta estabilidad entre los años 2016 y 2018; en contraste para el año 2019 se produce un marcado incremento desde un 21% que había aumentado su participación entre el 2017 y 2018 a un 39% que lo hace entre los años 2018 y 2019 (Figura 1.3).
+&lt;br&gt;
+&lt;br&gt;
+Este aumento tiende a ser más agudo entre personas jóvenes (18 a 29 años, Figura 1.4), con educación superior universitaria (Figura 1.5), y particularmente entre aquellos con amigos políticamente activos, sugiriendo un efecto de influencia social normativa (Figura 1.7). Las personas con posicionamiento de izquierda y de centro aumentaron la frecuencia de participación entre el 2018 y 2019 en mayor medida que aquellas que se identifican con la derecha o se declaran independientes, cuya tasa de cambio es menor al promedio de la muestra (Figura 1.6).
+&lt;br&gt;
+&lt;br&gt;
+La Figura 1.8 revela que las personas exhiben amplios sentimientos de rabia por el nivel de desigualdad y el costo de la vida en Chile, así como rabia y miedo hcia el actuar de Carabineros y de Manifestantes violentos en manifestaciones. Tal como lo revela la Figura 1.9, la participación en movimientos sociales estuvo asociada positivamente a sentimientos de rabia por los niveles de desigualdad y costo de la vida (mayor participación a medida que aumenta la rabia) (Figura 1.10). Por otro lado, quienes exhibieron menores niveles de rabia o miedo hacia manifestantes violentos mostraron mayores niveles participación en movimientos sociales (Figura 1.11).
+&lt;/p&gt;
+---
+### 1.3 Cambio en Frecuencia de participación en movimientos sociales, según ola de encuesta
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-20-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 944 &lt;/small&gt;
+---
+
+### 1.4 Cambio en Frecuencia de participación en movimientos sociales entre 2018 y 2019, según edad del entrevistado
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-21-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 944 &lt;/small&gt;
+---
+### 1.5 Cambio en Frecuencia de participación en movimientos sociales entre 2018 y 2019, según nivel educacional del entrevistado
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-22-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 943&lt;/small&gt;
+---
+### 1.6 Cambio en Frecuencia de participación en movimientos sociales entre 2018 y 2019, según posición ideológica del entrevistado (de año previo)
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-23-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 929&lt;/small&gt;
+
+---
+### 1.7 Cambio en Frecuencia de participación en movimientos sociales entre 2018 y 2019, según participación de amigos en movimiento social
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-24-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 920&lt;/small&gt;
+---
+
+
+
+### 1.8 Rabia y miedo hacia nivel de desigualdad, costo de la vida en Chile, actuar de carabineros y actuar de manifestantes violentos (2019)
+
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-26-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.884 &lt;/small&gt;
+
+---
+
+### 1.9 Frecuencia de participación en movimiento social (2019), según rabia hacia nivel de desigualdad y costo de la vida en Chile
+
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-27-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.445 &lt;/small&gt;
+---
+### 1.10 Frecuencia de participación en movimiento social (2019), según rabia y miedo hacia el accionar de Carabineros en manifestaciones
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-28-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.442 &lt;/small&gt;
+---
+### 1.11 Frecuencia de participación en movimiento social (2019), según rabia y miedo hacia manifestantes violentos en protestas
+
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-29-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.443 &lt;/small&gt;
+---
+
+class: center, middle
+background-image: url("Imagenes/fondo_modulo.jpg")
+background-position: center
+background-size: contain
+.pull-left[
+# Identificación Política
+¿Se ha modificado la identificación con partidos políticos y coaliciones en los últimos cuatro años?]
+
+---
+## Identificación con Partidos y Coaliciones
+&lt;p style='text-align: justify;'&gt;
+El escenario político chileno ha experimentado importantes cambios durante la última década: modificación al sistema electoral, reducción de las tasas de participación electoral, auge e intensificación de ciclos continuados de protesta social, deceso de antiguas coaliciones políticas y emergencia de nuevos referentes, entre otras cosas más. ¿Cómo evolucionan las identidades políticas en este contexto "líquido"?
+&lt;br&gt;
+&lt;br&gt;
+En la Figura 2.2 se observa las transiciones de identificación por coalición entre 2016 y 2019. En el transcurso de cuatro años, alrededor de dos tercios o más de la población encuestada (en cada ola), no se identifica con alguna coalición. No obstante, hay bastante movimiento debajo de la superficie. Entre el año 2016 y 2018 se observa una transición importante de personas que no se identifican con ninguna colación hacia el Frente Amplio, Chile Vamos, y en menor medida hacia la Nueva Mayoría (ver Figura 2.4). En contraste, entre el 2018 y 2019 la población sin identificación política se ve aumentada de vuelta con flujos similares desde las tres coaliciones.
+&lt;br&gt;
+&lt;br&gt;
+La Figura 2.5 revela que mientras la identificación ideológica de derecha e izquierda tienden a mantener sus porcentajes agregados, el centro crece al tiempo que se reduce la no identificación con la escala de izquierda-derecha. Es decir, se constatan flujos importantes que dan cuenta de una creciente politización el 2019, especialmente en aquellas personas que no se identificaban con ninguna orientación política el 2016. Similar al caso de identificación con coaliciones, se observa una cantidad importante de cambio individual por debajo de los promedios agregados (ver Figura 2.6).
+&lt;/p&gt;
+---
+
+### 2.1 ¿Cuál de los siguientes partidos políticos representa mejor sus intereses, creencias y valores? Según Ola del Estudio
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-30-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.885&lt;/small&gt;
+---
+### 2.2 ¿Cuál de las siguientes coaliciones políticas representa mejor sus intereses, creencias y valores? Según Ola del Estudio
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-31-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.865&lt;/small&gt;
+---
+### 2.3 Identificación con partidos políticos, según identificación con coalición política (2019)
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-32-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.844&lt;/small&gt;
+---
+### 2.4 Cambios en identificación con coaliciones políticas, entre 2016 y 2019
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-33-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.738&lt;/small&gt;
+
+---
+### 2.5 Posición ideológica, según ola de estudio
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-34-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.896&lt;/small&gt;
+---
+### 2.6 Cambios en Posición ideológica, según ola de estudio
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-35-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.857&lt;/small&gt;
+---
+### 2.7 Porcentaje que se identifica con algún partido o coalición política, según Ola del estudio
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-36-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.871&lt;/small&gt;
+---
+### 2.8 Cambios en identificación con algún partido o coalición política, según Ola del estudio
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-37-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.801&lt;/small&gt;
+---
+### 2.9 Cambios en identificación con algún partido o coalición política entre 2016 y 2019, según grupo etáreo (en 2016)
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-38-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.886&lt;/small&gt;
+---
+
+### 2.10 Cambios en identificación con algún partido o coalición política entre 2016 y 2019, según posición ideológica (en 2016)
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-39-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.847&lt;/small&gt;
+---
+
+### 2.11 Cambios en identificación con algún partido o coalición política entre 2016 y 2019, según interés (en 2016)
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-40-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.877&lt;/small&gt;
+---
+
+class: center, middle
+background-image: url("Imagenes/fondo_modulo.jpg")
+background-position: center
+background-size: contain
+.pull-left[
+# Actitudes hacia la democracia
+¿Cómo ha cambiado el apego y la satisfacción hacia el regímen democrático?]
+
+---
+## Apoyo a la Democracia
+&lt;p style='text-align: justify;'&gt;
+Se ha conceptualizado que la estabilidad del régimen democrático depende de la legitimidad que tiene la democracia entre los ciudadanos (Almond y Verba, 1963; Norris, 1999; Dalton, 2015). En esta línea, se presenta a continuación la evolución del apoyo a la democracia entre la población encuestada.
+&lt;br&gt;
+&lt;br&gt;
+En la Figura 3.1 se muestra que el apoyo a la democracia crece de manera muy significativa entre 2016 y 2019 desde un 48% hasta un 60%, a costa principalmente de las alternativas ‘Ninguna’ y ‘En algunos casos un gobierno autoritario puede ser preferible’. La alternativa de indiferencia (‘Da los mismo un régimen democrático o autoritario’) se mantiene estable entre mediciones, pero cerca de la mitad de las personas que mencionan esta alternativa en 2019 optaron por otra respuesta en 2016.
+&lt;br&gt;
+&lt;br&gt;
+En contraste con el aumento en el apoyo a la democracia, se observa en la Figura 3.2 un incremento muy marcado en el nivel de insatisfacción con el funcionamiento de la democracia en Chile; mientras que en el 2018 un 25% indica estar ‘Nada satisfecho’ con la democracia, esta cifra más que se duplica hasta un 54% en el 2019.
+&lt;br&gt;
+&lt;br&gt;
+Corroborando el contraste anterior, preguntas orientadas a medir orientaciones hacia autoritarismo en la población (Figura 3.4) sugieren en general elevados niveles de autoritarismo entre los años 2016 y 2018, pero también una baja considerable para la medición 2019, en medio del estallido social.
+&lt;/p&gt;
+---
+### 3.1 ¿Con cuál de las siguientes frases está usted más de acuerdo?
+![](Reporte_Completo_files/figure-html/unnamed-chunk-41-1.png)&lt;!-- --&gt;
+
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.825&lt;/small&gt;
+
+---
+### 3.2 ¿Cuán satisfecho o insatisfecho está usted con el funcionamiento de la democracia en Chile?
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-42-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.857&lt;/small&gt;
+
+---
+### 3.3. ¿Con cuál de las siguientes frases está usted más de acuerdo? (2019), según posición ideológica
+
+![](Reporte_Completo_files/figure-html/unnamed-chunk-43-1.png)&lt;!-- --&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.863&lt;/small&gt;
+
+---
+
+### 3.4 Grado de acuerdo con las siguientes afirmaciones
+&lt;p style='text-align: center;'&gt;Porcentaje que responde De acuerdo o Totalmente de acuerdo &lt;/p&gt;
+![](Reporte_Completo_files/figure-html/unnamed-chunk-44-1.png)&lt;!-- --&gt;
+
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.910&lt;/small&gt;
+
+---
+
+class: center, middle
+background-image: url("Imagenes/fondo_modulo.jpg")
+background-position: center
+background-size: contain
+.pull-left[
+# Perfiles Ideológicos de los Chilenos 
+Más allá del eje izquierda-derecha ¿Cómo se estructura la ideología política de los chilenos?
+]
+---
+### Clases latentes: Motivación
+&lt;p style='text-align: justify;'&gt;
+
+Ante el escenario político "líquido" que ha experimentado Chile durante la última década, surge la pregunta de cómo se estructura hoy el mapa ideológico de los chilenos. Si bien el eje izquierda-derecha tiene una larga historia en el ordenamiento de los partidos políticos chilenos, cerca de un tercio de la población no se identifica hoy con esta representación el 2019. La emergencia de nuevos actores y movimientos sociales refuerzan la necesidad de buscar más y nuevas herramientas interpretativas que permitan analizar con mayor profundidad la complejidad ideológica de la población.
+&lt;br&gt;
+&lt;br&gt;
+Inspirados en las conceptualizaciones de Feldman (2014), en ELSOC 2019 se incorporaron una serie de preguntas orientadas a evaluar distintas preferencias acerca de diversos temas políticos de relevancia nacional referidos a cuestiones socio-económicos y moral-culturales. A los encuestados se les consultó su nivel de acuerdo con las frases que se presentan en la siguiente lámina.
+&lt;/p&gt;
+---
+class: middle
+### Batería de preguntas
+
+-Las parejas homosexuales deberían poder adoptar hijos
+
+-El aborto debe ser legal bajo cualquier circunstancia
+
+-El Estado de Chile, más que los privados, debería ser el principal proveedor de educación
+
+-Cada persona debiera asegurarse por sí mismo su futura pensión para la tercera edad
+
+-Chile debería tomar medidas más drásticas para impedir el ingreso de inmigrantes al país
+
+-La educación sexual de los niños debería ser responsabilidad exclusiva de los padres
+
+-Se deberían clausurar empresas contaminantes, incluso si esto implica un aumento en el desempleo
+
+-El gasto social debe destinarse únicamente a los más pobres y vulnerables
+---
+## Modelo teórico de perfiles ideólogicos
+&lt;img src="Imagenes/modelo_cl_1.png" width="90%" style="display: block; margin: auto;" /&gt;
+---
+class: middle
+### Aproximación Empírica
+&lt;p style='text-align: justify;'&gt;
+Con el propósito de indagar si existen patrones comunes de respuestas dadas por los ciudadanos a las cuestiones socio-económicos y moral-culturales que permitan identificar posibles grupos, se realizó un análisis de clases latentes (BIC=23.294,67).
+&lt;br&gt;
+&lt;br&gt;
+De este análisis de identificaron cuatro clases que se diferencian entre sí, y que para efectos de describirlas las hemos llamado Progresistas, Liberales bisagra, Conservadores pro-estado, Conservadores pro-mercado.
+&lt;br&gt;
+&lt;/p&gt;
+
+---
+### Perfiles ideológicos: Resultados principales
+&lt;p style='text-align: justify;'&gt;
+
+Como puede observarse en la Figura 4.1, los progresistas corresponden al 24% de los entrevistados, y se caracterizan, más que ningún otro grupo, por apoyar un rol más activo del Estado en la provisión de servicios públicos de carácter más bien universalistas y con componentes solidarios. Al mismo tiempo adoptan muy mayoritariamente posiciones liberales en el plano moral-cultural, como es en el caso del aborto, o la adopción homoparental. El opuesto ideológico de este grupo son los Conservadores pro-mercado, correspondientes al 37%, quienes favorecen posiciones conservadoras en el plano moral (p. ej. que la educación sexual sea responsabilidad exclusiva de los padres), y respaldan políticas sociales focalizadas y la responsabilidad individual en pensiones. También son el grupo que más respalda la idea de que el país debe impedir mayormente el ingreso de inmigrantes al país.
+&lt;br&gt;
+&lt;br&gt;
+Los Conservadores pro-estado, que alcanzan el 21% de la muestra, muestran bajos niveles de apoyo a políticas moral-culturales liberales, e incluso más bajos que sus contrapartes pro-mercado, pero también muestran menor apoyo a políticas sociales focalizadas o la responsabilidad individual en pensiones. Por último, los liberales bisagra (18%) tienden a adoptar posiciones intermedias entre los Progresistas y Conservadores. Se muestran más liberales en el plano moral-cultural que los Conservadores, pero también manifiestan mayor apoyo a la expansión de las capacidades del Estado, aunque no con la misma intensidad que los Progresistas.
+&lt;br&gt;
+&lt;br&gt;
+A pesar de las grandes diferencias observables en los patrones de respuesta entre las clases, las opiniones referidas a educación pública y protección del medio ambiente muestran consensos muy claros en todos los grupos.
+&lt;/p&gt;
+---
+### Perfiles ideológicos: Resultados principales
+&lt;p style='text-align: justify;'&gt;
+
+La composición socioeconómica e ideológica de los tipos de ciudadanos son marcadamente diferentes. Tal como se muestra en el Figura 4.4 y 4.6, los progresistas tienen, en promedio, un nivel educativo alto (56% con educación superior técnica o universitaria), y una mayoría se identifica ideológicamente como de izquierda (44%) o centro (23%). Los conservadores, ya sean pro-estado o pro-mercado, tienen un nivel educacional más bajo (63% y 77%, respectivamente, tiene educación secundaria completa o menos), y son ideológicamente variados con presencia relevante en todos los grupos ideológicos, aunque algo menor en la izquierda, y algo mayor entre los que no se identifican. Los Liberales Bisagra, nuevamente, se ubican en una posición intermedia en ambas dimensiones.
+&lt;br&gt;
+&lt;br&gt;
+Por último, las clases también muestran niveles muy variables de preferencia por el régimen democrático. Mientras este alcanza un 76% de apoyo entre los Progresistas, se reduce a un 62% entre Conservadores pro-estado, a un 60% entre Liberales Bisagra, y un 46% entre Conservadores pro-mercado (ver Figura 4.9).
+
+&lt;/p&gt;
+---
+### 4.1 Perfiles ideológicos de los chilenos (2019)
+
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-46-1.png" style="display: block; margin: auto;" /&gt;
+&lt;small&gt; Nota: Resultados sin ponderar. N = 2.085&lt;/small&gt;
+---
+
+### 4.2. Sexo, según Perfiles ideológicos de los chilenos (2019)
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-47-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 2.085&lt;/small&gt;
+---
+### 4.3 Tramo etáreo, según Perfiles ideológicos de los chilenos (2019)
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-48-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 2.085&lt;/small&gt;
+---
+### 4.4 Nivel educacional, según Perfiles ideológicos de los chilenos (2019)
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-49-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 2.083&lt;/small&gt;
+---
+### 4.5 Religión, según Perfiles ideológicos de los chilenos (2019)
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-50-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 2.084&lt;/small&gt;
+---
+### 4.6 Posición política, según Perfiles ideológicos de los chilenos (2019)
+![](Reporte_Completo_files/figure-html/unnamed-chunk-51-1.png)&lt;!-- --&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 2.068&lt;/small&gt;
+---
+### 4.7 Interés en política, según Perfiles ideológicos de los chilenos (2019)
+![](Reporte_Completo_files/figure-html/unnamed-chunk-52-1.png)&lt;!-- --&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 2.083&lt;/small&gt;
+---
+### 4.8 Satisfacción con la Democracia, según Perfiles ideológicos de los chilenos (2019)
+![](Reporte_Completo_files/figure-html/unnamed-chunk-53-1.png)&lt;!-- --&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 2.034&lt;/small&gt;
+---
+### 4.9 Preferencia por la Democracia, según Perfiles ideológicos de los chilenos (2019)
+![](Reporte_Completo_files/figure-html/unnamed-chunk-54-1.png)&lt;!-- --&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 2.049&lt;/small&gt;
+---
+### 4.10 Consistencia durante las 4 olas en Posición política, según Perfiles ideológicos de los chilenos (2019)
+![](Reporte_Completo_files/figure-html/unnamed-chunk-55-1.png)&lt;!-- --&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.743&lt;/small&gt;
+---
+### 4.11 Consistencia durante las 4 olas en Identificación partidaria, según Perfiles ideológicos
+![](Reporte_Completo_files/figure-html/unnamed-chunk-56-1.png)&lt;!-- --&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.741&lt;/small&gt;
+---
+### 4.12 Consistencia durante las 4 olas en Identificación con coaliciones política, según Perfiles ideológicos (2019)
+![](Reporte_Completo_files/figure-html/unnamed-chunk-57-1.png)&lt;!-- --&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.637&lt;/small&gt;
+---
+### 4.13 Niveles de confianza social, según Perfiles ideológicos de los chilenos (2019)
+
+
+
+![](Reporte_Completo_files/figure-html/unnamed-chunk-59-1.png)&lt;!-- --&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 2.055&lt;/small&gt;
+---
+
+class: center, middle
+background-image: url("Imagenes/fondo_modulo.jpg")
+background-position: center
+background-size: contain
+.pull-left[
+# Conflicto de Clases y Élites
+¿Cómo se caracteriza la dinámica de conflicto entre clases sociales? ] 
+---
+## Relaciones inter-clases
+
+Para medir las relaciones intergrupales a nivel de las clases sociales, se les preguntó a los encuestados 
+
+| Dimensión                      	| Pregunta                                                                                                                                                                                                                                                                                                                                                                                                               	|
+|--------------------------------	|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
+| Identificación de clase social 	| En la sociedad, comúnmente, existen distintos grupos o clases sociales. &lt;br&gt;Las personas de clase social alta son las que tienen los ingresos más altos,&lt;br&gt;el mayor nivel de educación y los trabajos más valorados.&lt;br&gt;Las personas de clase social baja son las que tienen los ingresos más bajos,&lt;br&gt;el menor nivel de educación y los trabajos menos valorados.&lt;br&gt;Entre estas clases existen otras intermedias.  	|
+| Frecuencia de Contacto         	| ¿Con qué frecuencia conversa o interactúa con personas de clase social   alta/baja?                                                                                                                                                                                                                                                                                                                                    	|
+| Contacto Positivo              	| Cuándo interactúa con personas de clase social alta/baja, ¿cuán amistosa   ha sido esa experiencia?                                                                                                                                                                                                                                                                                                                    	|
+| Contacto Negativo              	| ¿Con qué frecuencia ha tenido usted malas experiencias con personas de   clase social alta/baja, tales como desacuerdos, tensiones, peleas o   conflictos?                                                                                                                                                                                                                                                             	|
+
+
+---
+class: middle
+##  Relaciones inter-clases
+&lt;p style='text-align: justify;'&gt;
+En términos de relaciones entre clases sociales, los resultados arrojan que para el año 2019 el contacto con clases altas y bajas es segregado y asimétrico. Tal como indica la Figura 5.1, sólo el 16% de las personas se identifican como de clase social baja reportan contacto frecuente con personas de clase alta, mientras que esta cifra asciende a 49% entre aquellos que se identifican como de clase alta. En contraste, los entrevistados reportan niveles muy similares, variación que fluctúa entre un 72% y 82%, de contacto frecuente con personas de clase baja, independiente de su propia auto ubicación social. 
+&lt;br&gt;
+&lt;br&gt;
+Se reitera el patrón segregado y asimétrico en el reporte de contacto positivo entre las distintas clases sociales, aunque las diferencias son de menor intensidad. La Figura 5.2 revela niveles muy altos de contacto positivo con personas de clase baja (sobre el 80% para las tres clases sociales), mientras que el contacto positivo con personas de clase alta asciende desde un 40% entre personas se identifican como de clase social baja, hasta un 59% entre aquellos que se identifican como de clase social alta. Al revisar el contacto negativo (ver Figura 5.3), se puede constatar que los niveles reportados son muy bajos, si bien los encuestados que se identifican como de clase baja reporta niveles más elevados (10% versus un 3% entre los que se identifican como de clase alta).
+
+---
+### 5.1 Frecuencia de contacto con clase alta y clase baja, según clase social subjetiva del entrevistado (2019)
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-60-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.257&lt;/small&gt;
+
+
+---
+### 5.2 Contacto positivo con personas de clase alta y clase baja, según clase social subjetiva del entrevistado (2019)
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-61-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.238&lt;/small&gt;
+
+---
+### 5.3 Contacto negativo con personas de clase alta y clase baja, según clase social subjetiva del entrevistado (2019)
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-62-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.258&lt;/small&gt;
+
+---
+class: middle
+### Clases sociales y Trato Justo
+&lt;p style='text-align: justify;'&gt;
+
+En la Figura 5.7 destaca de sobremanera como la gran mayoría de los encuestados ELSOC perciben que las personas de clase alta son tratadas frecuentemente con respeto, mientras que otros grupos sociales como personas pobres, adultos mayores o mujeres, obtienen porcentajes marcadamente menores. 
+&lt;br&gt;
+&lt;br&gt;
+Al considerar el trato respetuoso que se le da a las personas en distintos ámbitos sociales según la auto identificación de la clase social de los entrevistados, se observa que entre el año 2018 y 2019 las percepciones se han tendido a mantener estables entre aquellos que se identifican como de clase alta, mientras que han tendido a bajar entre las otras clases (ver Figuras 5.8 - 5.11). En la percepción de trato respetuoso por parte de Carabineros se observa una de las bajas más marcadas, particularmente en las clases sociales más bajas pasando de un 39% en 2018 a un 16% en 2019. 
+&lt;/p&gt;
+---
+### 5.7 ¿Con cuánta frecuencia diría que personas de los siguientes grupos son tratadas con respeto...?
+&lt;p style='text-align: center;'&gt; Porcentaje que responde frecuencia "Alta"   &lt;/p&gt;
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-63-1.png" style="display: block; margin: auto;" /&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 3.173&lt;/small&gt;
+---
+
+### 5.8 ¿Con cuánta frecuencia diría que las personas de su clase social son tratadas con respeto en los servicios de salud?, según clase social subjetiva del entrevistado
+&lt;p style='text-align: center;'&gt; Porcentaje que responde "Casi siempre" o "Siempre" &lt;/p&gt;
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-64-1.png" style="display: block; margin: auto;" /&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.245&lt;/small&gt;
+
+---
+### 5.9 ¿Con cuánta frecuencia diría que las personas de su clase social son tratadas con respeto en el trabajo?, según clase social subjetiva del entrevistado
+&lt;p style='text-align: center;'&gt; Porcentaje que responde "Casi siempre" o "Siempre" &lt;/p&gt;
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-65-1.png" style="display: block; margin: auto;" /&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.232&lt;/small&gt;
+---
+### 5.10 ¿Con cuánta frecuencia diría que las personas de su clase social son tratadas con respeto por parte de Carabineros?, según clase social subjetiva del entrevistado
+&lt;p style='text-align: center;'&gt; Porcentaje que responde "Casi siempre" o "Siempre" &lt;/p&gt;
+
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-66-1.png" style="display: block; margin: auto;" /&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.232&lt;/small&gt;
+---
+### 5.11 ¿Con cuánta frecuencia diría que las personas de su clase social son tratadas con respeto por parte de la Clase Alta?, según clase social subjetiva del entrevistado
+&lt;p style='text-align: center;'&gt; Porcentaje que responde "Casi siempre" o "Siempre" &lt;/p&gt;
+
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-67-1.png" style="display: block; margin: auto;" /&gt;
+
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.223&lt;/small&gt;
+---
+## Deprivación Relativa
+&lt;p style='text-align: justify;'&gt;
+La deprivación relativa corresponde a la experiencia psicológica que emerge cuando una persona al compararse con otros individuos (o a su grupo en relación a otros grupos), percibe que no está recibiendo el reconocimiento o los recursos que se siente merecedora (frustración), en relación con otras personas o grupos (Grant y Brown, 1995).
+&lt;br&gt;
+Esta percepción de deprivación, individual o grupal, gatilla la emergencia de sentimiento de injusticia, insatisfacción y descontento ante la frustración. La deprivación relativa puede expresarse entonces a nivel individual y grupal dependiendo de cual identidad y referente de comparación se ocupa.
+&lt;br&gt;
+En ELSOC medimos ambos componentes en las siguientes preguntas:
+&lt;/p&gt;
+&lt;br&gt;
+
+| Dimensión                                      	| Pregunta (Grado de acuerdo)                                                                 	|
+|------------------------------------------------	|--------------------------------------------------------------------------	|
+| Depreprivación Relativa Individual             	| Me siento insatisfecho al compararme con otros como yo         	|
+| Depreprivación Relativa Individual   (inversa) 	| Me siento privilegiado en comparación a otros como yo  	|
+| Depreprivación Relativa Grupal                 	| Me siento insatisfecho al compararme con clases mas altas      	|
+| Depreprivación Relativa Grupal (inversa)       	| Mi clase social es privilegiada en comparación a otras 	|
+| Depreprivación Relativa Grupal                 	| Las personas de mi clase están peor que las de clases mas altas  	|
+
+---
+## Deprivación Relativa
+&lt;p style='text-align: justify;'&gt;
+La Figura 5.12 revela un patrón muy interesante. Por una parte, cuando se consideran los indicadores individuales de deprivación, se constata consistentemente que un porcentaje alto de las personas encuestadas percibe que se siente privilegiada en comparación a “otros como yo” (70%) y al mismo tiempo solo un 27% se siente insatisfecho al compararse con ‘otros como yo’. En contraste, la comparación relativa a nivel grupal arroja patrones invertidos. Mientras que un 49% de los entrevistados menciona que se siente insatisfecha al compararse con ‘clases más altas’, el porcentaje de respuestas que indican que su clase social es privilegiada se reduce a un 41%. 
+&lt;br&gt;
+&lt;br&gt;
+Tanto la derivación relativa a nivel individual como a nivel grupal tienden a disminuir progresivamente entre las personas que se identifican como miembros de clase social media y alta (ver Figura 5.13).
+&lt;/p&gt;
+
+---
+
+### 5.12 Grado de deprivación Relativa según las siguientes categorías (2019)
+&lt;p style='text-align: center;'&gt; Suma de Respuestas "De acuerdo" y ”Totalmente de acuerdo" &lt;/p&gt;
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-68-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 3.169&lt;/small&gt;
+---
+### 5.13 Grado de deprivación relativa individual y grupal, según clase social subjetiva (2019)
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-69-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 3.150&lt;/small&gt;
+---
+class: middle
+## Percepción de elites
+&lt;p style='text-align: justify;'&gt;
+En 2019 se incluyó en el estudio una serie de preguntas acerca de la percepción que tienen los encuestados frente a las elites. Los resultados de la Figura 5.14 revelan que existen percepciones muy prevalentes respecto a que los “poderosos operan de manera interesada”, no importándoles las personas común y corrientes, y que la “justicia los favorece”. Estas percepciones son mayoritarias, independiente de la clase social subjetiva a la que se adscribe el encuestado, aunque entre aquellos que se identifican como de clase alta son, en términos relativos, menos dominantes. 
+
+&lt;/p&gt;
+
+---
+### 5.14 Percepción de las elites, según clase social subjetiva (2019)
+&lt;p style='text-align: center;'&gt; Porcentaje que responde "De acuerdo" y "Totalmente de acuerdo" &lt;/p&gt;
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-70-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 3.159&lt;/small&gt;
+---
+
+class: center, middle
+background-image: url("Imagenes/fondo_modulo.jpg")
+background-position: center
+background-size: contain
+.pull-left[
+# Justificación de la Violencia
+¿En qué medida se justifica la violencia para el
+control social? ¿Y para exigir cambios sociales? ¿Ha
+cambiado su grado de justificación post estallido
+social 18/O?
+]
+
+---
+
+## Justificación de la violencia
+&lt;p style='text-align: justify;'&gt;
+Todas las sociedades se ven enfrentadas al desafío de reducir el uso de la violencia para resolver las controversias o conflictos. Cuando los miembros de una sociedad justifican el uso de la violencia, la probabilidad de ocurrencia de hechos violentos aumenta sistemáticamente (Markowitz, 2001) y se corre el riesgo de que ocurra una escalada que lleve a disminuir drásticamente la seguridad de las personas.
+&lt;br&gt;
+&lt;br&gt;
+La diversidad de formas de la violencia que se encuentran tanto en el Chile de hoy, como en cualquier sociedad a lo largo de su historia, justifica la necesidad de abordar su evolución a lo largo del tiempo. En ELSOC se analizará la evolución de dos tipos de violencia: violencia para el control social y violencia para el cambio social.
+&lt;/p&gt;
+
+---
+
+## Justificación de la violencia para el control social – a manos de ciudadanos
+&lt;p style='text-align: justify;'&gt;
+La violencia para el control social, corresponde a actos de agresión física que tienen como finalidad mantener o restablecer el orden social imperante. Normalmente este tipo de violencia es ejercida por miembros de grupos mayoritarios o de alto estatus o por las instituciones que actúan en su nombre, sobre individuos o grupos minoritarios o de bajo estatus, por ejemplo, los delincuentes. En este contexto, se distingue entre violencia llevada a cabo de manera privada por ciudadanos (linchamientos) y violencia institucional (violencia de Carabineros).
+&lt;br&gt;
+&lt;br&gt;
+Tal como se aprecia en la Figura 21, existe en general, un grado importante de justificación del uso de la violencia para ejercer control social de los delincuentes, el cual se mantiene relativamente estable en el tiempo. Perseguir y golpear a un delincuente que acaba de cometer un asalto, por ejemplo, alcanza 26% de alta justificación y 47 % considera que pocas o algunas veces se justifica el 2019.  Este patrón de justificación del uso de la violencia se reduce de manera importante cuando se consulta por la conducta de amarrar a un poste y desnudar a un delincuente que acaba de cometer un asalto. En este caso, solo un 14% lo justifica, encontrándose en este caso que 55% de las personas derechamente consideran que nunca se justifica este tipo de acto. Este tipo de justificación de violencia experimenta variaciones menores entre 2016 y 2019).
+&lt;/p&gt;
+
+---
+### 6.1 Justificación de la violencia en relación a delincuencia, según ola de encuesta
+
+![](Reporte_Completo_files/figure-html/unnamed-chunk-71-1.png)&lt;!-- --&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.912&lt;/small&gt;
+---
+
+## Justificación de la violencia para el control social – a manos de carabineros
+&lt;p style='text-align: justify;'&gt;
+Tal como lo revela la Figura 6.2, existe un alto consenso en la población respecto de no justificar el uso de la fuerza por parte de Carabineros para reprimir una marcha pacífica. En torno al 65% de las personas señala el 2016 que nunca se justifica este actuar. Esta cifra, que se mantiene relativamente estable en el tiempo, aumenta de manera significativa post estallido social de octubre 2019 alcanzando un 79%.
+&lt;br&gt;
+&lt;br&gt;
+Un patrón distinto de justificación del uso de la fuerza se constata cuando se analiza que Carabineros desaloje a la fuerza a estudiantes de liceo en toma. Si el 2016, se encontraba que un 43% lo justificaba a veces y un 16% siempre lo justificaba, estas cifras caen de manera muy significativa el 2019, llegando a un 29% y 8,4% respectivamente. Claramente, post estallido social, se justifica en menor medida esta forma de control social ejercido por Carabineros.
+&lt;br&gt;
+&lt;br&gt;
+Cuando se consulta por el nivel de justificación de la violencia en contra de Carabineros -que los estudiantes tiren piedras a Carabineros en marchas por la educación-, se constata un alto consenso en indicar que nunca justifica este accionar. Sin embargo, llama la atención, que post estallido social, esta cifra cambia, aumentando la proporción de personas que la justifica a veces (19%) y en torno a un 8% que siempre se justifica.
+&lt;/p&gt;
+
+---
+### 6.2 Justificación de la violencia en relación al actuar de Carabineros, según ola
+![](Reporte_Completo_files/figure-html/unnamed-chunk-72-1.png)&lt;!-- --&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.911&lt;/small&gt;
+---
+
+## Justificación de la violencia para el cambio social
+&lt;p style='text-align: justify;'&gt;
+La violencia para el cambio social, por su parte, corresponde a actos de agresión instrumental perpetrados habitualmente por individuos o miembros de grupos (muchas veces desaventajados) que aspiran a promover un cambio en la forma en que se organiza la sociedad (Gerber, Carvacho &amp; González, 2016).
+&lt;br&gt;
+&lt;br&gt;
+Los resultados reportados en la Figura 6.3 revelan de manera sistemática y estable a lo largo del tiempo (entre 2016-2019), que existe alto consenso en indicar que nunca se justifica que personas incendien o dañen inmobiliario público y/o medios de transporte y/o locales comerciales para exigir cambios sociales; tampoco que personas dañen bienes o propiedades en el barrio que vive ni en otros barrios. En definitiva, existe un rechazo fuerte y claro hacia este tipo de actos de violencia como medio para exigir cambios sociales.
+&lt;br&gt;
+&lt;br&gt;
+Sin embargo, se constatan importantes variaciones en función de la edad, el nivel educacional, y la orientación política de las personas. Específicamente, en términos relativos son los jóvenes entre 18 y 29 años (Figura 6.4); las personas que cuentan con educación universitaria (Figura 6.5) y quienes tienen una orientación política de izquierda (Figura 6.9) quienes más justifican este tipo de violencia instrumental.
+&lt;/p&gt;
+
+---
+### 6.3 Justificación de la violencia para el cambio social (2019)
+![](Reporte_Completo_files/figure-html/unnamed-chunk-73-1.png)&lt;!-- --&gt;
+&lt;small&gt; Nota: para las categorías "Personas dañen bienes y propiedades del barrio en que usted vive", y "Personas dañen propiedades en barrios distintos al que usted vive", se pregunta específicamente en relación a las movilizaciones del 18/O. Resultados Ponderados (con Diseño Muestral Complejo). N = 1.910 &lt;/small&gt;
+
+---
+### 6.4 Justificación de la violencia para el cambio social (2019), según tramo de edad
+![](Reporte_Completo_files/figure-html/unnamed-chunk-74-1.png)&lt;!-- --&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.908&lt;/small&gt;
+---
+### 6.5 Justificación de la violencia para el cambio social (2019), según nivel educacional
+![](Reporte_Completo_files/figure-html/unnamed-chunk-75-1.png)&lt;!-- --&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.906&lt;/small&gt;
+---
+### 6.6 Justificación de la violencia para el cambio social (2019), según asistencia a marchas pacíficas
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-76-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.908&lt;/small&gt;
+---
+### 6.7 Yo estaría dispuesto a participar en acciones más radicales, si pensara que no existen otras alternativas viables para promover el cambio social
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-77-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.831&lt;/small&gt;
+---
+### 6.8 Estaría dispuesto a participar en acciones radicales, según grupo de edad y sexo (2019)
+&lt;p style='text-align: center;'&gt;Porcentaje que responde "De acuerdo" o "Totalmente de acuerdo" &lt;/p&gt;
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-78-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 3.035&lt;/small&gt;
+---
+### 6.9 Estaría dispuesto a participar en acciones radicales, según Posición ideológica (2019)
+&lt;p style='text-align: center;'&gt;Porcentaje que responde "De acuerdo" o "Totalmente de acuerdo" &lt;/p&gt;
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-79-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 3.012&lt;/small&gt;
+---
+### 6.10 Estaría dispuesto a acciones radicales, según Justificación de la violencia para el cambio social
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-80-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.827&lt;/small&gt;
+---
+
+class: center, middle
+background-image: url("Imagenes/fondo_modulo.jpg")
+background-position: center
+background-size: contain
+.pull-left[
+# Cambio Constitucional
+¿Cómo ha variado la opinión pública frente a la cuestión constitucional? ¿Quiénes cambian de opinión con el estallido social?]
+---
+## Caracterización de la opinión publica respecto al cambio constitucional
+&lt;p style='text-align: justify;'&gt;
+Desde que se inició el proceso de reflexión en torno a un cambio de la constitución, durante el segundo gobierno de la presidenta Bachelet, y hasta que se consolidó el acuerdo del 15 de noviembre, post estallido social de octubre 2019, ELSOC ha monitoreado cómo las personas perciben la constitución, su importancia, el posible cambio y las formas de concretarlo.
+&lt;br&gt;
+&lt;br&gt;
+Así, se observa (ver Figura 7.1), que existe un cambio muy relevante desde el 2016 al 2019 constatándose 1) una caída de la conformidad con la actual constitución, llegando a solo un 7%), 2) un aumento de la importancia de cambiarla, llegando a un 74%, y 3) y alto grado de acuerdo en la necesidad de cambiar la Constitución (82%). Adicionalmente, se observa un aumento de las personas que conversan frecuentemente con amigos y familiares sobre un posible cambio a la constitución, pasando desde un 14% el 2016 a un 28% el 2019 (post estallido social, ver Figura 7.2).
+&lt;br&gt;
+&lt;br&gt;
+Tal como se aprecia en la Figura 7.3, el año 2019 disminuye el porcentaje de personas que piensan que un grupo de expertos deba redactar la constitución en conjunto con el parlamento, aumentando la opción por una asamblea constituyente. Interesantemente, se producen trayectoria cruzadas que revelan la dinámica o cambio que ha ocurrido en esta materia, donde un flujo importante de personas que el 2016 pensaba que era deseable que un grupo de expertos redactara la nueva Constitución, cambia su opinión el 2019, apoyando la opción que sean los ciudadanos en una asamblea constituyente quienes la redacten. Un proceso inverso ocurre en el grupo importante de personas que el 2016 apoyaba la asamblea constituyente y el 2019 opta porque sea un grupo de expertos que cumpla esta tarea.
+&lt;/p&gt;
+---
+
+## Caracterización de la opinión publica respecto al cambio constitucional
+&lt;p style='text-align: justify;'&gt;
+
+Al analizar las variaciones respecto del grado de acuerdo de cambiar la Constitución, se observa que si bien la importancia aumenta en todos los grupos etarios, es espacialmente entre los jóvenes de 18 a 29 años donde se constata un aumento ostensible pasando desde el 63% el 2016 a 90% el 2019 (Ver Figura 7.4).
+&lt;br&gt;
+&lt;br&gt;
+Al analizar el grado de acuerdo de cambiar la Constitución en función del nivel educacional de la población (Figura 7.5), se observan variaciones en el tiempo que siguen una tendencia similar en todos los grupos (desde la educación básica a la universitaria). Sin embargo, en términos relativos este grado de acuerdo es más alto en los niveles educacionales más altos (2017 y 2018), hasta que en 2019, dichas diferencias desaparecen, constatándose un alto consenso en torno al 80 % de acuerdo que se cambie la Constitución en todos los grupos.
+&lt;br&gt;
+&lt;br&gt;
+Por últimos, los resultados revelan que existen cambios importantes en el grado de acuerdo de cambiar la Constitución en función de la orientación política de los participantes (Figura 7.6). De manera sistemática, y a lo largo del tiempo, son las personas que se declaran de izquierda quienes muestran los niveles más altos y estables de acuerdo con cambiar la Constitución, seguido por quienes se identifican en el centro. Las personas de derecha y quienes no se identifican con ninguna orientación política tienen un patrón muy similar entre el 2016 y 2018, fluctuando entre un 67% y 50% de acuerdo. Este patrón cambia sustantivamente post estallido social, donde tienden a convergen todos los grupos en altos niveles de acuerdo (entre un 94% y 81%) exceptuando a las personas que se identifican con la derecha, quienes llegan a un 58% de grado de acuerdo.
+&lt;/p&gt;
+
+---
+### 7.1 Caracterización de la opinión pública sobre el cambio constitucional
+![](Reporte_Completo_files/figure-html/unnamed-chunk-81-1.png)&lt;!-- --&gt;
+
+&lt;small&gt; Nota 1: Resultados Ponderados (con Diseño Muestral Complejo). N = 8.930. 
+&lt;br&gt;
+Nota 2: Preguntas de Importancia de Cambio Constitucional y Conformidad con Actual Constitución no fueron levantadas en año 2018.&lt;/small&gt;
+---
+
+### 7.2 ¿Con qué frecuencia conversa usted sobre un posible cambio de la Constitución con amigos, familiares o conocidos?
+&lt;p style='text-align: center;'&gt;Porcentaje que responde "Frecuente" o "Muy frecuentemente" &lt;/p&gt;
+
+![](Reporte_Completo_files/figure-html/unnamed-chunk-82-1.png)&lt;!-- --&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.888&lt;/small&gt;
+---
+### 7.3 En Chile hay distintas opiniones sobre como cambiar la Constitución. Si se cambiara la Constitución, ¿cuál de las siguientes opciones representa mejor su opinión?
+
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-83-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 2.288&lt;/small&gt;
+---
+### 7.4 ¿En qué medida está usted de acuerdo o en desacuerdo con que se cambie la Constitución en Chile?, según tramo de edad
+&lt;p style='text-align: center;'&gt; Porcentaje que responde que está "De acuerdo" o "Muy de acuerdo" &lt;/p&gt;
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-84-1.png" style="display: block; margin: auto;" /&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 2.683&lt;/small&gt;
+---
+### 7.5 ¿En qué medida está usted de acuerdo o en desacuerdo con que se cambie la Constitución en Chile?, según nivel educacional
+&lt;p style='text-align: center;'&gt; Porcentaje que responde que está "De acuerdo" o "Muy de acuerdo" &lt;/p&gt;
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-85-1.png" style="display: block; margin: auto;" /&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 3.076&lt;/small&gt;
+---
+### 7.6 ¿En qué medida está usted de acuerdo o en desacuerdo con que se cambie la Constitución en Chile?, según Posición política
+&lt;p style='text-align: center;'&gt; Porcentaje que responde que está "De acuerdo" o "Muy de acuerdo" &lt;/p&gt;
+![](Reporte_Completo_files/figure-html/unnamed-chunk-86-1.png)&lt;!-- --&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 2.683&lt;/small&gt;
+---
+### 7.7 ¿En qué medida está usted de acuerdo o en desacuerdo con que se cambie la Constitución en Chile? (2019), según Perfiles Ideológicos
+
+
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-88-1.png" style="display: block; margin: auto;" /&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.993&lt;/small&gt;
+
+---
+class: middle
+## ¿Quiénes cambiaron de opinión sobre la constitución con el estallido social?
+&lt;p style='text-align: justify;'&gt;
+La Figura 7.8 revela las trayectorias que experimentan las personas a lo largo del tiempo respecto de la opinión de cambiar la actual Constitución. Así, se observa que un porcentaje muy sustantivo de personas que se mostraban indiferentes o que estaban en desacuerdo con cambiar la constitución el 2018 transitan a estar de acuerdo o muy de acuerdo con este cambio el 2019, post estallido social.
+&lt;br&gt;
+&lt;br&gt;
+Estas variaciones en los grados de acuerdo de cambiar la actual Constitución entre 2018 y 2019 varían en función de la edad, siendo los grupos jóvenes y adultos jóvenes donde se observan lo mayores cambios (Figura 7.9). Al analizar estas variaciones por nivel educacional, se muestra interesantemente que son los grupos de menor escolaridad quienes experimentan un incremento sustantivo en comparación a quienes tienen mayores niveles educacionales (Figura 7.10). Finalmente, estas variaciones ocurrieron especialmente en quienes se identifican con el centro político (Figura 7.11).
+&lt;/p&gt;
+---
+### 7.8 Variaciones en grado de acuerdo respecto a cambiar la Constitución entre 2018 y 2019
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-89-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.681&lt;/small&gt;
+---
+### 7.9 Variación en apoyo a cambiar la Constitución (entre 2018 y 2019), según grupo etáreo
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-90-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.657&lt;/small&gt;
+---
+### 7.10 Variación en apoyo a cambiar la Constitución (entre 2018 y 2019), según nivel educacional
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-91-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.655&lt;/small&gt;
+---
+### 7.11 Variación en apoyo a cambiar la Constitución (entre 2018 y 2019), según Posición idológica
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-92-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.647&lt;/small&gt;
+
+---
+class: middle
+## Desigualdad de participación en el proceso constituyente
+&lt;p style='text-align: justify;'&gt;
+Los niveles de participación efectiva en distintas instancias de discusión asociadas al proceso de cambio constituyente, ya sea en aquellas organizadas en el año 2016 (p. ej. Encuentros auto-convocados) o aquellas que surgieron durante el estallido social del 2019 (p. ej. cabildos ciudadanos), sugieren patrones diferenciados según la edad (Figura 7.12), nivel educacional (Figura 7.13) y posición política (Figura 7.14) de los encuestados. En ambos años se observa un nivel progresivamente mayor de participación a medida en que los encuestados son más jóvenes, alcanzaron mayor nivel educacional y se identifican hacia la izquierda, con los independientes participando con menor frecuencia, en comparación a las personas que se identifican con la derecha. También se puede constatar que los niveles de participación para todos los grupos son, en términos estadísticos, iguales o mayores en 2019 que en 2016.
+&lt;br&gt;
+&lt;br&gt;
+No obstante lo anterior, las diferencias porcentuales entre grupos tienden a ser más agudas durante el 2019 que en el 2016. Mientras que en 2016 la participación de los más jóvenes fue 9 puntos porcentuales más alta que la de las personas mayores de 65, esta diferencia asciende a 16 puntos en 2019. La diferencia equivalente entre las personas con el menor y mayor nivel educacional es de 18 y 24 puntos porcentuales, respectivamente; y entre las personas de izquierda e independientes la diferencia es de 11 y 20 puntos porcentuales. Esto sugiere que, si bien los niveles de participación durante el estallido fueron mayores que durante el proceso convocado por el Gobierno Bachelet II, también se tendió a concentrar mayormente en grupos determinados. 
+&lt;/p&gt;
+---
+### 7.12 Desigualdad de voz política en la participación en el proceso constituyente
+&lt;p style='text-align: center;'&gt; ¿Ha participado en alguna instancia de discusión asociada al proceso de cambio de la Constitución?, según tramos de edad &lt;/p&gt;
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-93-1.png" style="display: block; margin: auto;" /&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.907&lt;/small&gt;
+---
+### 7.13 ¿Ha participado en alguna instancia de discusión asociada al proceso de cambio de la Constitución?, según nivel educacional
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-94-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.905&lt;/small&gt;
+---
+### 7.14 ¿Ha participado en alguna instancia de discusión asociada al proceso de cambio de la Constitución?, según posición ideológica
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-95-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N = 1.890&lt;/small&gt;
+---
+
+class: center, middle
+background-image: url("Imagenes/fondo_modulo.jpg")
+background-position: center
+background-size: contain
+.pull-left[
+# Conflictividad barrial
+]
+---
+## Conflictividad y sociabilidad barrial
+&lt;p style='text-align: justify;'&gt;
+Las ciudades chilenas se caracterizan por marcados niveles de segregación residencial. Esto, en conjunción a la falta de servicios públicos en zonas periféricas y la creciente disparidad de recursos entre municipios ricos y pobres, ha dado lugar a marcadas diferencias socioeconómicas entre distintas zonas de la ciudad.
+&lt;br&gt;
+&lt;br&gt;
+La conflictividad barrial puede analizarse empíricamente por medio de preguntas que analizan la frecuencia con que las personas se han molestado o incomodado por problemas con vecinos. En la Figura 8.1 se observa que en términos temporales las molestias por problemas con los vecinos se han mantenido estable a lo largo del tiempo, siendo baja la proporción de la población que declara tener dichas experiencias. Al revisar las trayectorias temporales en la Figura 8.2, se puede apreciar que un porcentaje importante de las personas que declaró haber tenido muchas o algunas tensiones con sus vecinos en 2016, ellas tienden a disiparse el 2019. Sin embargo, también se consta movilidad entre quienes nunca vivieron tensiones con sus vecinos el 2016, más de la mitad de ellos declara haberlas vivido en pocas o algunas ocasiones el 2019.
+&lt;/p&gt;
+---
+## Conflictos Barriales
+&lt;p style='text-align: justify;'&gt;
+Al revisar la distribución de las personas que declaran tener “siempre o muchas veces” conflictos barriales, se puede observar una importante caída en el norte y en el sur del país, aumentando levemente en el centro y en la Región Metropolitana (Figura 8.3). Al revisar estos patrones por los estratos que componen el estudio, se constata que es en el Gran Santiago dónde ha aumentado la conflictividad barrial (Figura 8.4). Al analizar la conflictividad barrial por quintiles de ingresos, se constata que en general esta aumenta a medida que disminuyen los ingresos. Esta tendencia es estable en el tiempo, excepto en los quintiles 4 y 5 (sectores mas acomodados), donde se observan caídas más pronunciadas de conflictividad barrial al comparar 2016 y 2019 (Figura 8.5).
+---
+### 8.1 ¿Con qué frecuencia usted/alguien de su hogar se ha molestado o incomodado por problemas con sus vecinos? según ola de estudio
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-96-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N= 1.911 &lt;/small&gt;
+---
+### 8.2 Cambios en frecuencia de conflictos barriables
+&lt;br&gt;
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-97-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N= 1.904. &lt;/small&gt;
+---
+### 8.3 Porcentaje con alta frecuencia de conflictos barriales, según ola del estudio y zona geográfica
+&lt;p style='text-align: center;'&gt; Porcentaje con conflictos barriables "Siempre" o "Muchas veces" &lt;/p&gt;
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-98-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N=  1.909&lt;/small&gt;
+---
+### 8.4 Porcentaje con alta frecuencia de conflictos barriales, según ola del estudio y zona de residencia
+&lt;p style='text-align: center;'&gt; Porcentaje con conflictos barriables "Siempre" o "Muchas veces" &lt;/p&gt;
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-99-1.png" style="display: block; margin: auto;" /&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N= 1.909 &lt;/small&gt;
+---
+
+### 8.5 Porcentaje con alta frecuencia de conflictos barriales, según ola del estudio y quintiles de ingreso
+&lt;p style='text-align: center;'&gt; Porcentaje con conflictos barriables "Siempre" o "Muchas veces" &lt;/p&gt;
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-100-1.png" style="display: block; margin: auto;" /&gt;
+
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N=  1.909 &lt;/small&gt;
+
+---
+class: center, middle
+background-image: url("Imagenes/fondo_modulo.jpg")
+background-position: center
+background-size: contain
+.pull-left[
+#Sociabilidad barrial
+]
+---
+## Sociabilidad barrial
+&lt;p style='text-align: justify;'&gt;
+Para estudiar la sociabilidad barrial, ELSOC aborda cuatro aspectos centrales. Se le consulta a los encuestados acerca de la facilidad que tiene en su barrio para generar relaciones de amistad, y se evalúa la medida en que perciben la gente de su barrio es sociable, cordial y colaboradora. A partir de estos indicadores, se calcula un índice de sociabilidad barrial el cual expresa el nivel de apoyo social que las personas obtienen de su barrio (Smith, 1975). Tal como se puede apreciar en la Figura 9.1 se ha constatado un progresivo aumento de la alta sociabilidad a lo largo del tiempo. Es más, al analizar las trayectorias, es posible ver que hay un importante flujo de quienes declaraban tener baja o media sociabilidad barrial el 2016, moverse de manera importante a altos niveles de sociabilidad.
+&lt;br&gt;
+&lt;br&gt;
+Al nivel territorial se puede observar el mismo patrón de aumento de la sociabilidad barrial, según zona geográfica (Figura 9.3), zonas de residencia (Figura 9.4 y Figura 9.5) y quintiles de ingresos (Figura 9.6).
+&lt;/p&gt;
+
+---
+### 9.1 Sociabilidad Barrial, según ola de estudio
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-101-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N=  1.888 &lt;/small&gt;
+---
+### 9.2 Cambios en Sociabilidad Barrial, según ola de estudio
+&lt;p style='text-align: center;'&gt; Porcentaje con sociabilidad barrial "Alta" &lt;/p&gt;
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-102-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N=  1.845 &lt;/small&gt;
+---
+### 9.3 Porcentaje de Sociabilidad Barrial "Alta", según ola de estudio y zona geográfica
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-103-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N= 1.883 &lt;/small&gt;
+---
+### 9.4 Porcentaje de Sociabilidad Barrial "Alta", según ola de estudio y zona de residencia
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-104-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N=  934 &lt;/small&gt;
+---
+
+### 9.5 Porcentaje de Sociabilidad Barrial "Alta", según ola de estudio y zona de residencia
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-105-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N= 949 &lt;/small&gt;
+
+---
+
+### 9.6 Porcentaje con Índice de Sociabilidad Barrial "Alta", según ola de estudio y quintil de ingresos del hogar
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-106-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N= 1.859 &lt;/small&gt;
+
+---
+class: center, middle
+background-image: url("Imagenes/fondo_modulo.jpg")
+background-position: center
+background-size: contain
+.pull-left[
+# Confianza y seguridad con perspectiva territorial
+]
+---
+## Confianza y seguridad con perspectiva territorial
+&lt;p style='text-align: justify;'&gt;
+La confianza y la seguridad barrial tiene una importancia sustantiva en la medida de que nos permite comprender la evolución de la calidad de vida en los barrios y su sustentabilidad en el tiempo (Brown, Brown y Perkins, 2004).
+&lt;br&gt;
+&lt;br&gt;
+A nivel territorial se puede observar que la confianza en los vecinos ha tendido a aumentar levemente a nivel territorial (Figura 10.1), constatándose un incremento mayor en el norte del país. La confianza en los vecinos sigue siendo más alta en los barrios de mayores ingresos, sin embargo, nuevamente no se observan variaciones a lo largo del tiempo (Figura 10.2). 
+&lt;br&gt;
+&lt;br&gt;
+En relación a la percepción de seguridad en los barrios, se puede constatar que en la zona sur del país ha tendido a crecer con el paso del tiempo (Figura 10.3). La seguridad percibida en los barrios también tiende a aumentar con los niveles de escolaridad y de ingresos, siendo más alta en los tramos de mayor escolaridad e ingresos (Figura 10.4 y Figura 10.6). Son las personas mayores de 50 años en adelante quienes perciben mayor seguridad en sus barrios y quienes experimentan un aumento sustantivo desde el 2016 al 2019 (Figura 10.5). No se constatan variaciones según posición ideológica, sin embargo, ésta tiende a aumentar entre el 2016 al 2019 especialmente en quienes se declaran de centro y de derecha (Figura 10.7).
+&lt;/p&gt;
+
+---
+
+### 10.1 En términos generales, ¿cuánto confía usted en sus vecinos? Según ola del estudio y zona geográfica
+&lt;p style='text-align: center;'&gt;  Suma de Respuestas “Bastante” y “Mucho” &lt;/p&gt;
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-107-1.png" style="display: block; margin: auto;" /&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N= 1.903&lt;/small&gt;
+
+---
+### 10.2 En términos generales, ¿cuánto confía usted en sus vecinos? Según ola del estudio y nivel educacional
+&lt;p style='text-align: center;'&gt;  Suma de Respuestas “Bastante” y “Mucho” &lt;/p&gt;
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-108-1.png" style="display: block; margin: auto;" /&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N= 1.877&lt;/small&gt;
+---
+
+### 10.3 ¿Qué tan seguro o inseguro se siente en el barrio o vecindario donde usted vive? Según ola del estudio y zona geográfica
+&lt;p style='text-align: center;'&gt; Suma de Respuestas "Seguro" o ”Muy Seguro" &lt;/p&gt;
+
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-109-1.png" style="display: block; margin: auto;" /&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N= 1.912&lt;/small&gt;
+---
+### 10.4 ¿Qué tan seguro o inseguro se siente en el barrio o vecindario donde usted vive? Según ola del estudio y nivel educacional
+&lt;p style='text-align: center;'&gt; Suma de Respuestas "Seguro" o ”Muy Seguro" &lt;/p&gt;
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-110-1.png" style="display: block; margin: auto;" /&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N= 1.911&lt;/small&gt;
+---
+### 10.5 ¿Qué tan seguro o inseguro se siente en el barrio o vecindario donde usted vive? Según ola del estudio y tramos de edad
+&lt;p style='text-align: center;'&gt; Suma de Respuestas "Seguro" o ”Muy Seguro" &lt;/p&gt;
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-111-1.png" style="display: block; margin: auto;" /&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N= 1.912&lt;/small&gt;
+---
+### 10.6 ¿Qué tan seguro o inseguro se siente en el barrio o vecindario donde usted vive? Según ola del estudio y quintiles de ingreso per capita
+&lt;p style='text-align: center;'&gt; Suma de Respuestas "Seguro" o ”Muy Seguro" &lt;/p&gt;
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-112-1.png" style="display: block; margin: auto;" /&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N= 741&lt;/small&gt;
+---
+### 10.7 ¿Qué tan seguro o inseguro se siente en el barrio o vecindario donde usted vive? Según ola del estudio e ideología política
+&lt;p style='text-align: center;'&gt; Suma de Respuestas "Seguro" o ”Muy Seguro" &lt;/p&gt;
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-113-1.png" style="display: block; margin: auto;" /&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N= 1.895&lt;/small&gt;
+---
+class: center, middle
+background-image: url("Imagenes/fondo_modulo.jpg")
+background-position: center
+background-size: contain
+.pull-left[
+# Percepción de Mérito y Desigualdad
+]
+---
+## Estatus subjetivo, Percepción de Mérito y Desigualdad 
+&lt;p style='text-align: justify;'&gt;
+En toda sociedad, las personas tienden a ubicarse subjetivamente en clases sociales en función de la posición relativa que ellas perciben ocupan en relación al resto. ELSOC analizó este tema, y constató que en general las personas tienden a ubicarse mayoritariamente en las clases sociales medias (Figura 11.1), aún cuando se constata un aumento importante el 2019 de personas que se declaran pertenecer a clases bajas. Al analizar las trayectorias a lo largo del tiempo, los resultados revelan movimientos ascendentes (desde clases bajas a medias) y descendentes (desde clases medias a bajas) que explica la estabilidad de la clase social subjetiva (Figura 11.2). Como es esperable, existe una asociación con ingresos, donde aumenta la proporción de personas que se declara de clase baja a medida que caen los ingresos (Figura 11.3). Finalmente, al analizar las expectativas que las personas tienen de sus hijos(as) en el futuro existe una alta correspondencia con la clase social subjetiva, y se constata que, a medida que ésta aumenta, mayor es la proporción de personas que piensa que hijos(as) tendrán una posición alta en el futuro (Figura 11.4).
+&lt;br&gt;
+&lt;br&gt;
+El mérito, entendido como la combinación de esfuerzo y habilidades individuales (Sen, 2000), constituye el fundamento de una sociedad basada en el principio de igualdad de oportunidades. Estudiar la meritocracia, implica estudiar una de las formas en que las personas legitiman la desigualdad social. El merito se vuelve el principio fundamental a partir del cual se deben asignar o distribuir los bienes (Young, 1961).
+&lt;br&gt;
+&lt;br&gt;
+Los resultados en la Figura 11.5 revelan un alto consenso al identificar a la educación como el criterio más importante para surgir en la vida, seguido por el trabajo duro. En el otro extremo figuran en muy baja proporción la importancia que le atribuyen a la inteligencia a la hora de ser recompensadas. Por ultimo, se constata otro hecho que es estable en el tiempo, en torno a un 23,6% de las personas piensa que las personas son recompensadas por su esfuerzo. Todos estos aspectos evaluados se han mantenido estables en el tiempo.
+&lt;/p&gt;
+---
+### 11.1 En nuestra sociedad, hay grupos que tienden a ubicarse en los niveles más altos y grupos que tienden a ubicarse en los niveles más bajos de la sociedad ¿Dónde se ubicaría usted?, según ola de estudio
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-114-1.png" style="display: block; margin: auto;" /&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N=1.908 &lt;/small&gt;
+---
+### 11.2 Cambios de Clase social subjetiva entre 2016 y 2019
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-115-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N= 1.901 &lt;/small&gt;
+---
+### 11.3 Clase social subjetiva, según quintiles de ingreso (2019)
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-116-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N= 3.113&lt;/small&gt;
+---
+### 11.4  Si usted tiene actualmente hijos o si los tuviera en el futuro, ¿dónde cree usted que se ubicarían ellos?, según Clase social subjetiva (2019)
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-117-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N= 3.106 &lt;/small&gt;
+---
+### 11.5  Percepción de importancia y recompensas del mérito, según ola de estudio 
+&lt;p style='text-align: center;'&gt; Porcentaje de Respuestas "De acuerdo" y ”Totalmente de acuerdo" &lt;/p&gt;
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-118-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N= 1.912 &lt;/small&gt;
+
+---
+class: center, middle
+background-image: url("Imagenes/fondo_modulo.jpg")
+background-position: center
+background-size: contain
+.pull-left[
+# Género
+]
+---
+## Sexismo hostil y benevolente
+&lt;p style='text-align: justify;'&gt;
+El concepto de sexismo ambivalente (Glick y Fiske, 1997) identifica dos tipos de prejuicio hacia las mujeres, que involucran tanto evaluaciones negativas como positivas. El sexismo hostil es un prejuicio que concibe a las mujeres de forma negativa, derogatoria, y en un lugar inferior a los hombres. En contraste, el sexismo benévolo se muestra en apariencia como una visión positiva sobre las mujeres, sin embargo, se acompaña de una visión paternalista y de protección hacia las mujeres, que las limita a roles de género tradicionales. Ambas formas de sexismo difieren en el tipo de evaluación (positiva o negativa) hacia las mujeres, pero comparten su utilidad para justificar una estructura patriarcal y asumir una división tradicional de los roles de género.
+&lt;br&gt;
+&lt;br&gt;
+ELSOC desde el año 2019 incorpora una batería de preguntas para medir ambos tipos de sexismo. La Figura 12.1, muestra los niveles de sexismo según sexo de los participantes. En primer lugar, si bien tanto hombres como mujeres exhiben altos niveles de sexismo benevolente, estando de acuerdo y muy de acuerdo con que las mujeres son más refinadas que los hombres y que ellas debieran ser queridas y protegidas por los hombres, las mujeres tienden en términos relativos a exhibir menores niveles que los hombres. Respecto de los niveles de sexismo hostil, no se constatan diferencias por sexo, exhibiendo en general niveles relativamente alto de esta forma de prejuicio. 
+&lt;/p&gt;
+---
+## Sexismo hostil y benevolente
+&lt;p style='text-align: justify;'&gt;
+Al analizar los niveles de sexismo benevolente por edad, se observan importantes diferencias especialmente cuando se evalúa el grado de acuerdo con que las mujeres son más refinadas que los hombres (Figura 12.2). Claramente existe una asociación positiva, en que a mayor edad aumentan sustantivamente los grados de acuerdo con esta afirmación. Son especialmente llamativas las diferencias entre hombres y mujeres jóvenes, y adultos jóvenes donde son los primeros quienes adhieren más a la idea de que las mujeres son más refinadas que los hombres.  Sin embargo, existe un altísimo consenso para hombres y mujeres con independencia de la edad de que las mujeres debieran ser queridas y protegidas por los hombres, confirmando cuan arraigada esta esta forma de sexismo benevolente. Respecto del sexismo hostil (Figura 12.3), las únicas diferencias importantes se observan en el grupo de los jóvenes donde claramente las mujeres exhiben menor nivel de adhesión a la creencia de que las mujeres consiguen privilegios en nombre de la igualdad o cuando las mujeres son derrotadas limpiamente se quejan de discriminación.
+&lt;br&gt;
+&lt;br&gt;
+El sexismo benévolo y hostil cambia sustantivamente según nivel de escolaridad, observándose que a media que aumenta el nivel de escolaridad disminuye de manera muy sustantiva las expresiones de ambas formas de sexismo (Figura 12.4).
+&lt;/p&gt;
+---
+
+
+### 12.1 Sexismo benévolo y hostil, según sexo (2019)
+&lt;p style='text-align: center;'&gt; Porcentaje que responde "De acuerdo" o "Totalmente de acuerdo" &lt;/p&gt;
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-119-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N=1.913 &lt;/small&gt;
+---
+### 12.2 Sexismo benévolo,según sexo y tramo de edad (2019)
+&lt;p style='text-align: center;'&gt; Porcentaje que responde "De acuerdo" o "Totalmente de acuerdo" &lt;/p&gt;
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-120-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N= 1.913&lt;/small&gt;
+
+---
+
+### 12.3 Sexismo hostil, según sexo y tramo de edad (2019)
+&lt;p style='text-align: center;'&gt; Porcentaje que responde "De acuerdo" o "Totalmente de acuerdo" &lt;/p&gt;
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-121-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N= 1.879&lt;/small&gt;
+---
+
+### 12.4 Sexismo benévolo y hostil, según nivel educacional (2019)
+&lt;p style='text-align: center;'&gt; Porcentaje que responde "De acuerdo" o "Totalmente de acuerdo" &lt;/p&gt;
+
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-122-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N= 1.911 &lt;/small&gt;
+---
+## Expectativas y roles de género
+&lt;p style='text-align: justify;'&gt;
+La literatura especializada muestra que en general, son los hombres de quienes se espera realicen roles y trabajos de alto estatus, mientras que a las mujeres les corresponde llevar a cabo roles domésticos y de menor estatus (Glick y Fiske, 1999). Esta diferenciación de género es de alguna forma complementaria, ya que asume que las mujeres tienen una serie de características para asumir estos roles (por ejemplo, pureza para ser una buena esposa, o afectividad para ser una buena madre), que complementan las características de los hombres (por ejemplo, competitividad para ser un trabajador exitoso). Por lo tanto, las expresiones de estos roles de género tradicionales pueden considerarse como una forma de expresión del prejuicio hacia la mujer que todavía están vigentes (Figueiredo, Jiménez-Moya, Paredes &amp; González, 2017).
+&lt;br&gt;
+&lt;br&gt;
+Tal como se aprecia en la Figura 12.5, el 85,4% de los hombres está de acuerdo en que sus familias y amigos esperan que ellos sean una persona laboralmente exitosa. Esta cifra sin embargo cae sustantivamente en el caso de las mujeres llegando a un 75,6%. Según los estereotipos tradicionales de género, se presume que sean las mujeres y en menor proporción los hombres, quienes piensen que la familia y los amigos esperan que los hijos sean su primera prioridad en la vida. Los resultados de ELSOC no confirman esta hipótesis, revelando muy altas expectativas tanto en las mujeres como en los hombres (Figura 12.5). &lt;/p&gt;
+---
+### 12.5 Expectativas y Normas de género (2019), según sexo del entrevistado
+&lt;p style='text-align: center;'&gt; Porcentaje que responde "De acuerdo" o "Totalmente de acuerdo" &lt;/p&gt;
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-123-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N= 1.866 &lt;/small&gt;
+---
+## Derechos y roles de género
+&lt;p style='text-align: justify;'&gt;
+En cuanto a derechos y roles de género, la Figura 12.6 revela que una muy baja proporción de hombres (16,6%) y mujeres (14,5%) está de acuerdo con la idea de que, en ausencia de trabajos disponibles, sean los hombres quienes deberían tener más derecho a un trabajo que las mujeres. Esta baja adhesión revela un distanciamiento importante de los roles estereotipados de género. Sin embargo, y en consonancia con los roles tradicionales de género, dicho hallazgo contrasta fuertemente con altísimo consenso que existe entre hombres y mujeres al pensar que la vida familiar sufre cuando la mujer tiene un trabajo a tiempo completo. Ambos datos dan cuenta de la ambivalencia que existe en la población respecto de la participación de la mujer en el mundo del trabajo y el impacto que produce ello en la vida familiar.  &lt;/p&gt;
+---
+### 12.6 Derechos y Roles de género (2019), según sexo del entrevistado
+&lt;p style='text-align: center;'&gt; Porcentaje que responde "De acuerdo" o "Totalmente de acuerdo" &lt;/p&gt;
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-124-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N=1.912 &lt;/small&gt;
+---
+## Trabajo y género
+&lt;p style='text-align: justify;'&gt;
+En línea con los roles de género, no sorprende que en el año 2019 el 82,6% de los hombres tenga un trabajo remunerado, en comparación al 52,3% de las mujeres (Figura 12.7). Esto se complementa con el hecho que el 24,7% de las mujeres realizan trabajo doméstico no remunerado, en comparación al 0% de los hombres. Al igual que los resultados reportados por la Encuesta Nacional de Uso del Tiempo (ENUT 2015), se refleja que no existe una distribución de tareas domésticas y de cuidado paritaria. Esto resulta relevante cuando existen políticas públicas que se han creado para facilitar el acceso de las mujeres al mercado laboral, compatibilizando la carga del trabajo doméstico con el trabajo remunerado y, sobre todo, promoviendo una distribución más equitativa entre hombres y mujeres de las labores domésticas (Figueiredo, Jiménez-Moya, Paredes &amp; González, 2017).
+&lt;br&gt;
+&lt;br&gt;
+Es interesante constatar que al analizar las trayectorias que han experimentado las personas en cuanto a su actividad principal a lo largo del tiempo (trabajo remunerado, no remunerado, etc.) son las mujeres quienes exhiben mayor dinamismo, incrementándose desde el 2016 al 2019 la proporción de mujeres que trabaja remuneradamente.
+&lt;br&gt;
+&lt;br&gt;
+Finalmente, ELSOC revela la persistencia de una brecha salarial entre hombres y mujeres que trabajan a tiempo parcial o completo entre el 2016 y 2019. Tal como se observa en la Figura 12.9 el salario promedio de las mujeres oscila alrededor de \$430.000, mientras que el de los hombres alrededor de \$660.000.
+&lt;/p&gt;
+---
+### 12.7 Porcentaje de trabajadores y trabajadoras por situación ocupacional (2019), según sexo del entrevistado
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-125-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N= 1.911 &lt;/small&gt;
+---
+### 12.8 Porcentaje de trabajadores y trabajadoras no remunerados, según ola y sexo del entrevistado
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-126-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N= 1.888 &lt;/small&gt;
+---
+### 12.9 Ingreso medio de ocupados y ocupadas a tiempo completo o parcial, según ola y sexo del entrevistado
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-127-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N= 1.128 &lt;/small&gt;
+---
+## Identidad de género y sororidad
+&lt;p style='text-align: justify;'&gt;
+El concepto de género es principalmente de orden cultural y social, pero también, tiene una dimensión subjetiva en tanto es constituyente de la identidad.  ELSOC indagó en qué medida hombres y mujeres se identifican con su género. Tal como es esperable para una identidad tan saliente, la gran mayoría de los hombres (78%) y de las mujeres (89%) está de acuerdo con la afirmación que su género es parte importante de su identidad. Es decir, ser hombre o mujeres constituye un aspecto importante de su identidad subjetiva (Figura 12.10).
+&lt;br&gt;
+&lt;br&gt;
+Al preguntar por el grado de compromiso con personas del mismo sexo, se constatan diferencias importantes entre hombres y mujeres.  Son las mujeres (38%) en comparación a los hombres (22%) quienes se sienten más comprometidas con personas de su mismo sexo.  Es esperable que este resultado se relacione con la alta visibilidad que ha tenido el movimiento feminista, tanto en Chile como en el mundo, donde ha tomado fuerza el concepto y ejercicio de la sororidad, la cual refiere a la experiencia de las mujeres que conduce a la búsqueda de relaciones positivas y a la alianza existencial y política con otras mujeres para eliminar todas las formas de opresión y para empoderarlas. La sororidad es un pacto político entre pares (Lagarde, 2012). &lt;/p&gt;
+---
+### 12.10 Identidad de género (2019), según sexo
+&lt;p style='text-align: center;'&gt; Porcentaje que responde "De acuerdo" o "Totalmente de acuerdo" &lt;/p&gt;
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-128-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N=1.907 &lt;/small&gt;
+---
+class: center, middle
+background-image: url("Imagenes/fondo_modulo.jpg")
+background-position: center
+background-size: contain
+.pull-left[
+# Salud Mental y Bienestar
+]
+---
+## Salud Mental y Bienestar 
+&lt;p style='text-align: justify;'&gt;
+La salud mental es un indicador del bienestar de la población. La depresión es una afección mental caracterizada por un bajo estado de ánimo, pérdida de energía y desinterés generalizado. En todas las mediciones de ELSOC se ha incluido una batería de preguntas para detectar sintomatología depresiva (PHQ-9). En base a este instrumento se pueden catalogar a los participantes según sus síntomas de depresión: “Sin síntomas o depresión mínima”, “Depresión media”, “Depresión Moderada” y “Depresión Moderada Severa o Severa”. 
+&lt;br&gt;
+&lt;br&gt;
+En general, se aprecia preocupantemente, un incremento de las personas que declaran tener síntomas de depresión a lo largo del tiempo (Figura 13.1). El cambio más relevante ocurre entre el 2017 y 2019, específicamente en la categoría Depresión Media, que el año 2017 la padecía el 29,4% de las personas mientras que el 2019 aumenta al 40,3% (las demás categorías permanecen relativamente estables). 
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;small&gt; Nota 1: es necesario aclarar que este índice no constituye un diagnóstico clínico de depresión. &lt;br&gt;
+Nota 2: Se combinan las categorías "Depresión Moderada Severa" y "Depresión Severa" por su baja frecuencia por separado.
+&lt;/small&gt;
+&lt;/p&gt;
+---
+### 13.1 Síntomas de Depresión, según Ola del Estudio
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-129-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N= 1.891&lt;/small&gt;
+---
+## Brecha de género en Salud Mental
+&lt;p style='text-align: justify;'&gt;
+En el mundo occidental, la depresión es aproximadamente el doble de frecuente en las mujeres que en los hombres (Piccinelli y Wilkinson, 2000). La mayoría de las investigaciones actuales aceptan que las diferencias de género en la depresión son el resultado de una interacción variable entre factores biológicos, psicológicos y sociales (Hopcroft y Bradley, 2007; Kuehner, 2003). Esta brecha de género se evidencia la Figura 13.2, donde se observa que entre 2016 y 2019 existe una mayor proporción de mujeres que hombres que tiene síntomas de Depresión Moderada o Depresión Moderada Severa a Severa.  Por ejemplo, el año 2016, el 12,9% de los hombres se encontraba en dichas categorías, en comparación al 28,5% de las mujeres. Si bien esta brecha de género disminuye en los años 2017 y 2018, el año 2019 post estallido social, son las mujeres quienes incrementan sustantivamente los síntomas de Depresión Moderada o más, llegando a duplicar al grupo de los hombres.
+&lt;br&gt;
+&lt;br&gt;
+La Figura 13.3 revela que las trayectorias de síntomas de depresión entre el año 2016 y 2019 son bastante similares entre hombres y mujeres. Por ejemplo, alrededor de la mitad de hombres y de mujeres que el año 2016 no presentaban síntomas si lo hacen el año 2019; migrando principalmente a la categoría de depresión media. Por su parte, la mayoría de hombres y mujeres que el año 2016 tenía síntomas de depresión media, se mantiene en dicha categoría el año 2019. En las categorías de mayor depresión, los hombres parecen mayoritariamente disminuir la cantidad de síntomas de depresión, mientras que en las mujeres no se revela un patrón de trayectoria predominante.
+&lt;br&gt;
+&lt;br&gt;
+Al analizar la sintomatología por tramos de edad y sexo, el 2019 se constata que son las mujeres quienes, en comparación a los hombres, exhiben más altos niveles de depresión moderada y moderada severa en todos los tramos etarios excepto en el tramo de 18 a 29 años donde ambos se igualan en torno a 30,5% para mujeres, y 34,5% para hombres  (Figura 13.4).
+&lt;/p&gt;
+---
+### 13.2 Sintomatología Depresiva por año, según sexo
+&lt;p style='text-align: center;'&gt; Porcentaje con síntomas de "Depresion Moderada" o "Depresion Moderada Severa a Severa" &lt;/p&gt;
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-130-1.png" style="display: block; margin: auto;" /&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N= 1.888 &lt;/small&gt;
+---
+### 13.3 Cambios en Síntomas de depresión entre años 2016 y 2019, según sexo
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-131-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N=1.827 &lt;/small&gt;
+
+---
+### 13.4 Síntomas de Depresión según tramos de edad y sexo (2019)
+&lt;p style='text-align: center;'&gt; Porcentaje con síntomas de "Depresion Moderada" o "Depresion Moderada Severa a Severa" &lt;/p&gt;
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-132-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N=1.863 &lt;/small&gt;
+---
+## Sintomatología depresiva, sexo y ocupación
+&lt;p style='text-align: justify;'&gt;
+La literatura revela que esta brecha de género en salud mental encuentra también relacionada con los roles de género tradicionales y las posiciones sociales dentro de los diferentes ámbitos de la vida privada y social, donde los roles femeninos se encuentran más asociados a la falta de elección, sobrecarga de roles y la subvaloración (Piccinelli &amp; Wilkinson, 2000; Stoppard, 2000). Estos roles de género tradicionales vinculan lo masculino con el ámbito laboral y el sustento económico familiar, mientras que lo femenino con el cuidado de los hijos(as) y tareas del hogar.
+&lt;br&gt;
+&lt;br&gt;
+Sin embargo, producto de los cambios estructurales y culturales que se han producido en las últimas décadas, las mujeres que se quedan en la casa son cada vez menos valoradas. A su vez, las mujeres que se incorporan a la fuerza laboral enfrentan mayor riesgo de discriminación económica y desigualdad laboral que los hombres, además de exhibir un mayor riesgo de depresión debido a la sobrecarga de funciones y al conflicto de roles, ya que pese a tener un trabajo remunerado siguen estando al cuidado del hogar y los niños (Bebbington, 1996; Piccinelli y Wilkinson, 2000).
+&lt;br&gt;
+&lt;br&gt;
+Por su parte, el ingreso cada vez mayor de las mujeres al mercado laboral se presenta como un desafío para los hombres respecto a la definición tradicional de masculinidad, principalmente a su rol de sostenedor económico del hogar (Courtenay, 2000; Garfield, Clark-Kauffman, &amp; Davis 2006).
+&lt;/p&gt;
+---
+## Sintomatología depresiva, sexo y ocupación
+&lt;p style='text-align: justify;'&gt;
+Esta relación entre roles de género tradicionales, ocupación y depresión se observan en la Figura 13.5. En primer lugar, se observa que en cada categoría ocupacional existe una mayor proporción de mujeres con síntomas de depresión moderada o severa en comparación a los hombres, a excepción de la categoría desempleado, donde el 34% de los hombres tiene síntomas de depresión moderada o severa en comparación al 27% de las mujeres. Es posible que los hombres al no poder cumplir con su rol masculino de sostenedor económico del hogar experimentan mayores síntomas depresivos en comparación a las mujeres. Esto se complementa con que los hombres con trabajo remunerado son aquellos que tienen menor proporción con síntomas de depresión moderado a severo.
+&lt;br&gt;
+&lt;br&gt;
+Por otra parte, en torno a un 28% de las mujeres que tienen trabajo remunerado, o bien que están desempleadas o jubiladas/pensionadas exhiben síntomas de depresión moderada o severa. Donde se observa con preocupación una alta proporción de mujeres que experimentan síntomas de depresión moderada o moda severa es en el caso de aquellas donde se desempeñan en trabajos del hogar no remunerado. Cabe mencionar que no hay hombres en el estudio que se desempeñen en esta categoría de trabajo del hogar no remunerado, por lo que no es posible estimar este valor (Figura 13.5).
+&lt;/p&gt;
+---
+### 13.5 Síntomas de Depresión según categoría ocupacional (año 2019)
+&lt;p style='text-align: center;'&gt; Porcentaje con síntomas de "Depresion Moderada" o "Depresion Moderada Severa a Severa" &lt;/p&gt;
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-133-1.png" style="display: block; margin: auto;" /&gt;
+&lt;small&gt; * En 2019 no hay hombres en la categoría Trabajo doméstico no remunerado &lt;/small&gt; &lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N= 1.779&lt;/small&gt;
+
+---
+class: center, middle
+background-image: url("Imagenes/fondo_modulo.jpg")
+background-position: center
+background-size: contain
+.pull-left[
+# Migración
+]
+---
+## Migración
+&lt;p style='text-align: justify;'&gt;
+Chile ha experimentado cambios muy significativos en la esfera política, económica, social y cultural. Entre otros aspectos, estos cambios han fortalecido la imagen internacional del país y contribuido a atraer a inmigrantes de la región y de otras partes del mundo, lo cual ha redundado en que Chile es hoy un país más diverso culturalmente hablando. Cuando los miembros de la sociedad de acogida – los chilenos en este caso- entran en contacto con personas y prácticas culturales distintas a la propia, pueden adoptar una disposición favorable hacia la inmigración en la medida que perciben que la llegada de personas de distintos países enriquecerá su matriz cultural, haciéndola más diversa y atractiva (Verkuyten, 2006) o bien pueden experimentar diversas formas de amenaza con el consiguiente desarrollo de actitudes negativas hacia la inmigración y conductas de evitación. 
+&lt;br&gt;
+&lt;br&gt;
+Al respecto, la evidencia muestra que la llegada de inmigrantes puede estimular el desarrollo de actitudes hostiles y xenofóbicas en sectores de la sociedad, especialmente en aquellos que perciben a los extranjeros como una amenaza (González, Sirlopú &amp; Kessler, 2010; Stephan &amp; Stephan, 2000; Green, 2009) en la medida que se piensa que ellos podrían demandar servicios y recursos públicos, reducir las oportunidades laborales para los nacionales (amenaza realista), o bien cambiar con sus prácticas culturales, los aspectos propios y distintivo de la cultura e identidad local (amenaza simbólica).
+&lt;/p&gt;
+---
+## Amenaza realista y amenaza simbólica respecto a inmigrantes
+&lt;p style='text-align: justify;'&gt;
+Tal como lo revela la Figura 14.1, se ha visto una caída sistemática de los niveles de amenaza realista que experimentan los chilenos respecto de los inmigrantes peruanos, pasando de un 58% en 2016 a un 43% en 2019, que piensa que con la llegada de inmigrantes está aumentando el desempleo. Por su parte los inmigrantes haitianos despiertan niveles similares de amenaza, que son estables entre el 2018 y 2019. Los inmigrantes venezolanos en cambio despiertan niveles altos de amenaza en torno al 58%. Aun así, los niveles de amenaza realista son relativamente estables respecto de todos los grupos inmigrantes en general. Una tendencia relativamente similar se constata en el caso de los niveles de amenaza simbólica (con la llegada de inmigrantes Chile está perdiendo su identidad), donde se observa una caída sistemática de los niveles de amenaza simbólica a lo largo del tiempo en el caso de los inmigrantes peruanos y una leve caída en el caso de los inmigrantes haitianos. Los inmigrantes venezolanos despiertan niveles similares de amenaza simbólica la que generan los inmigrantes haitianos (Figura 14.2).
+&lt;br&gt;
+&lt;br&gt;
+Al comparar los niveles de niveles de amenaza realista y simbólica según grupos de inmigrantes el 2019 (fecha que por primeras vez son medidos todos los grupos), se observa, en primer lugar, que hay mayores niveles de amenaza realista que simbólica, lo que es común para todos los grupos de inmigrantes (Figura 14.3) aun cuando resalta el mayor nivel de amenaza realista que despiertan los inmigrantes venezolanos. Por otro lado, comparado con los inmigrantes venezolanos y haitianos, los inmigrantes peruanos despiertan menores niveles de amenaza realista y simbólica respecto de todos los otros grupos. 
+&lt;/p&gt;
+---
+### 14.1 "Con la llegada de migrantes a Chile, está aumentando el desempleo", según ola y origen de migrantes
+&lt;p style='text-align: center;'&gt; Porcentaje de personas que responden "De acuerdo" o Totalmente de acuerdo"&lt;/p&gt;
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-134-1.png" style="display: block; margin: auto;" /&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N= 3.151 &lt;/small&gt;
+
+---
+### 14.2 "Con la llegada de migrantes, Chile está perdiendo su identidad", según ola y origen de migrantes
+&lt;p style='text-align: center;'&gt; Porcentaje de personas que responden "De acuerdo" o Totalmente de acuerdo"&lt;/p&gt;
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-135-1.png" style="display: block; margin: auto;" /&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N= 3.132&lt;/small&gt;
+---
+### 14.3 Confianza en migrantes, según ola y origen de migrantes
+&lt;p style='text-align: center;'&gt; Porcentaje de personas que responden "Bastante" o "Mucha confianza"&lt;/p&gt;
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-136-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N= 2.998&lt;/small&gt;
+
+---
+### 14.4 Percepción de amenaza realista y simbólica, según grupo de migrantes (2019)
+&lt;p style='text-align: center;'&gt; Porcentaje de personas que responden "De acuerdo" o Totalmente de acuerdo"&lt;/p&gt;
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-137-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N= 3.151&lt;/small&gt;
+
+---
+## Amenaza realista y simbólica respecto a inmigrantes según nivel educacional
+&lt;p style='text-align: justify;'&gt;
+Adicionalmente, estas formas de amenaza demostraron estar fuertemente relacionadas con el nivel educacional máximo alcanzado por las personas (Figura 14.5). En efecto, al analizar los niveles de amenaza en función del nivel de escolaridad de los participantes del estudio, se constataron diferencias muy sustantivas entre los niveles más bajos de escolaridad y los más altos, llegando en torno a un 75% y 57% de amenaza realista y simbólica, respectivamente, en los grupos que sólo lograron completar la escolaridad básica en comparación a los niveles observados en las personas que lograron educación universitaria completa o más, con un 27% y 16% amenaza simbólica y realista, respectivamente. Estas diferencias extremas revelan el importante rol que juega la educación formal en aminorar la amenaza percibida y su fuerte asociación con capital cultural y económico. 
+&lt;br&gt;
+&lt;br&gt;
+La evidencia revela que existe una fuerte asociación entre niveles de escolaridad y nivel socioeconómico, por lo que es posible inferir que los niveles de amenaza predominan en mayor medida en los grupos menos acomodados de la sociedad chilena como es el caso de otros países (Mc Laren, 2006). Los niveles de niveles de amenaza realista y simbólica también demostraron estar relacionadas con la edad de las personas, siendo los jóvenes quienes experimentan menores niveles de amenaza de ambos tipos (Figura 14.8).
+&lt;/p&gt;
+---
+### 14.5 Percepción de amenaza realista y simbólica respecto a inmigrantes, según nivel educacional (2019)
+&lt;p style='text-align: center;'&gt; Porcentaje de personas que responden "De acuerdo" o Totalmente de acuerdo"&lt;/p&gt;
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-138-1.png" style="display: block; margin: auto;" /&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N=3.147 &lt;/small&gt;
+---
+## Amenaza realista y simbólica respecto a inmigrantes según frecuencia de contacto
+&lt;p style='text-align: justify;'&gt;
+Por último, no hay duda que uno de los efectos inmediatos que surgen de los procesos migratorios es que, tanto las personas que llegan a vivir a un nuevo país, como aquellas que los reciben tienen oportunidad de entrar en contacto. Al respecto existe bastante consenso en la literatura en reconocer el valor que representan las experiencias de contacto frecuentes y de buena calidad para promover el desarrollo de actitudes favorables hacia distintos grupos, es decir, como un vehículo de promoción de cohesión e integración social (Brown &amp; Hewstone, 2005; González, Sirlopú &amp; Kessler, 2010; Pettigrew &amp; Tropp, 2006). 
+&lt;br&gt;
+&lt;br&gt;
+Tal como se observa en la Figura 14.6, se observa una asociación negativa entre frecuencia de contacto y niveles de amenaza realista y simbólica que experimentan los chilenos hacia los inmigrantes en general, de tal forma que, a medida que aumenta la frecuencia de contacto disminuyen las creencias de que la llegada de inmigrantes aumentará el desempleo o que Chile perderá su identidad. Al mismo tiempo, se constata que a medida que aumenta el contacto también aumenta la confianza hacia los inmigrantes en general (Figura 14.7).
+&lt;/p&gt;
+---
+### 14.6 Percepción de Amenaza Realista y Simbólica, según frecuencia de contacto (2019)
+&lt;p style='text-align: center;'&gt; Porcentaje de personas que responden "De acuerdo" o Totalmente de acuerdo"&lt;/p&gt;
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-139-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N=1.428 &lt;/small&gt;
+
+---
+### 14.7 Confianza en migrantes, según frecuencia de contacto (2019)
+&lt;p style='text-align: center;'&gt; Porcentaje de personas que responden "Bastante" o "Mucha confianza"&lt;/p&gt;
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-140-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N= 1.400&lt;/small&gt;
+
+---
+### 14.8 Percepción de amenaza realista y simbólica, según tramo de edad (2019)
+&lt;p style='text-align: center;'&gt; Porcentaje de personas que responden "De acuerdo" o Totalmente de acuerdo"&lt;/p&gt;
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-141-1.png" style="display: block; margin: auto;" /&gt;
+&lt;br&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N= 3.151 &lt;/small&gt;
+---
+
+## Frecuencia de Contacto y Confianza hacia los Inmigrantes
+&lt;p style='text-align: justify;'&gt;
+Acorde a lo esperado, los resultados también revelan que a medida que aumenta la frecuencia de contacto de los chilenos con los inmigrantes peruanos, haitianos, y venezolanos, aumentan significativamente los niveles de confianza (Figura 14.9) que exhiben hacia dichos grupos. Este patrón de resultados se manifiesta en todos los años del estudio. 
+
+&lt;br&gt;
+&lt;br&gt;
+Es importante destacar que los resultados expuestos no varían en función del grupo de inmigrantes evaluados (peruanos, haitianos y venezolanos). De manera global estos hallazgos confirman la importancia que reviste estimular experiencia de contacto positivo y de manera frecuente con los inmigrantes para promover actitudes favorables hacia ellos.
+
+&lt;/p&gt;
+---
+### 14.9 Efecto de Frecuencia de Contacto con migrantes sobre niveles de confianza de chilenos hacia migrantes, según ola del estudio
+&lt;p style='text-align: center;'&gt; Porcentaje de personas que responden "Bastante" o "Mucha confianza"&lt;/p&gt;
+
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-142-1.png" style="display: block; margin: auto;" /&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N= 1.461 &lt;/small&gt;
+---
+
+## Relevancia de las normas pro-contacto de cercanos
+&lt;p style='text-align: justify;'&gt;
+Dada la importancia que reviste el contacto para promover relaciones intergrupales positivas (confianza) y reducir los sentimientos de amenaza (simbólica y realista) asociados a la llegada de inmigrantes al país ELSOC analizó que factores promueven el contacto entre chilenos e inmigrantes peruanos, haitianos y venezolanos. El comportamiento de las personas se ve influenciado por las actitudes, valoraciones y acciones de otros. Esta influencia de terceros en el comportamiento individual se conoce como “normas sociales” y dictaminan que es apropiado o inapropiado hacer, pensar e incluso sentir (Paluck &amp; Shepherd, 2012; Tankard &amp; Paluck, 2016; González y cols, 2020)
+&lt;br&gt;
+&lt;br&gt;
+En este contexto, el interés principal está en el rol que cumple la red social más relevante de los chilenos, la familia y los amigos, como promotores del contacto con los inmigrantes peruanos y haitianos. ¿Exhiben mayores niveles de contacto con inmigrantes los chilenos cuyos familiares y amigos valoran o estimulan que ellos tengan relaciones de amistad con dichos grupos?
+
+&lt;/p&gt;
+---
+
+## Relevancia de las normas pro-contacto de cercanos
+&lt;p style='text-align: justify;'&gt;
+Los resultados revelaron de manera significativa y estable en el tiempo una asociación positiva entre las normas pro-contacto de la familia y amigos sobre las actitudes hacia los inmigrantes peruanos, haitianos y venezolanos. Los chilenos que declaran que sus familiares y amigos valoran que ellos tengan relaciones de amistad con inmigrantes peruanos y haitianos (la norma pro contacto), efectivamente se juntan más frecuentemente con ellos (Figura 14.10) en comparación a aquellos chilenos cuyas normas pro-contacto son bajas o medias. Este patrón genérico es estable en el tiempo.
+&lt;br&gt;
+&lt;br&gt;
+Estos hallazgos confirman la importancia que revisten los referentes normativos sociales significativos, como los familiares y amigos, en la predicción de cambio de la conducta social como las experiencias de contacto con inmigrantes. He ahí la importancia de abordar a través de políticas públicas adecuada la formación de normas pro-contacto que estimulen mayor cohesión social particularmente en aquellos barrios conde coexisten una importante presencia de inmigrantes y población chilena.
+
+&lt;/p&gt;
+---
+### 14.10 Efecto de normas pro-contacto de familia y amigos sobre Frecuencia de Contacto con migrantes, según ola del estudio
+
+&lt;p style='text-align: center;'&gt; Porcentaje de personas que responden Frecuencia de contacto con migrantes "Siempre" o "Casi siempre" &lt;/p&gt;
+
+&lt;img src="Reporte_Completo_files/figure-html/unnamed-chunk-143-1.png" style="display: block; margin: auto;" /&gt;
+&lt;small&gt; Nota: Resultados Ponderados (con Diseño Muestral Complejo). N= 1.391 &lt;/small&gt;
+---
+
+class: middle
+## Cómo citar este informe:
+&lt;p style='text-align: justify;'&gt;
+COES (2020) Radiografía del Cambio Social: Análisis de Resultados Longitudinales ELSOC 2016-2019. Presentación de Resultados COES. Septiembre, Santiago de Chile.
+&lt;/p&gt;
+&lt;br&gt;
+&lt;br&gt;
+
+---
+background-image: url("Imagenes/portada.png")
+background-position: center
+background-size: contain
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"seal": false,
+"ratio": "16:9",
+"slideNumberFormat": ""
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
